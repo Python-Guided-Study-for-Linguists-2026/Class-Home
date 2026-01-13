@@ -17,8 +17,8 @@
 
 ### Course Spaces
 
-- GitHub Class Org
-- MS Teams for chats, questions, discussions, OH
+- GitHub Class Org: [https://github.com/Python-Guided-Study-for-Linguists-2026](https://github.com/Python-Guided-Study-for-Linguists-2026)
+- [MS Teams](https://teams.microsoft.com/l/team/19%3AvsxQ5nAxky3jRr5YiOKnE2KB_v_ivFq6J1JoFTAHEME1%40thread.tacv2/conversations?groupId=f50fe5f1-2d61-4b9a-ad15-6483397770cd&tenantId=9ef9f489-e0a0-4eeb-87cc-3a526112fd0d) for chats, questions, discussions, OH. Group email is `pythonguidedstudy2026@groups.pitt.edu`
 
 ### Course Schedule
 <table style="border-collapse: collapse; width: 61.2414%; height: 403.822px;" border="1">
