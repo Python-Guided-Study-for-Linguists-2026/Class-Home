@@ -1,15 +1,12 @@
 # Python Guided Study
-(Offered through LING 2990/3990 Independent Study)
+- Offered through LING 2990/3990 Independent Study)
+- Class meetings: Thu Noon - 1:15pm @ 1325 CL
 
 ### Instructor/Guide
 
-Na-Rae Han (`naraehan@pitt.edu`), you can find me in G17 CL (= RH Language Media Center)
-
-Office hours: Tue 11am - 12:30pm, Wed 3:30-5pm 
-
-### Class Meetings
-
-Thu Noon - 1:15pm @ 1325 CL
+- Na-Rae Han (`naraehan@pitt.edu`)
+- You can find me in G17 CL (= RH Language Media Center)
+- Office hours: Tue 11am - 12:30pm, Wed 3:30-5pm 
 
 ### Course Materials
 
@@ -103,3 +100,4 @@ Thu Noon - 1:15pm @ 1325 CL
 </table>
 
 ### Course Flyer 
+[Flyer - Python Programming for Linguists (Grad Independent Study)](Flyer%20-%20Python%20Programming%20for%20Linguists%20(Grad%20Independent%20Study).pdf)
