@@ -1,5 +1,5 @@
 # Python Guided Study
-- Offered through LING 2990/3990 Independent Study)
+- Offered through LING 2990/3990 Independent Study, University of Pittsburgh
 - Class meetings: Thu Noon - 1:15pm @ 1325 CL
 
 ### Instructor/Guide
@@ -100,4 +100,4 @@
 </table>
 
 ### Course Flyer 
-[Flyer - Python Programming for Linguists (Grad Independent Study)](Flyer%20-%20Python%20Programming%20for%20Linguists%20(Grad%20Independent%20Study).pdf)
+[Flyer - Python Programming for Linguists (Grad Independent Study).pdf](Flyer%20-%20Python%20Programming%20for%20Linguists%20(Grad%20Independent%20Study).pdf)
