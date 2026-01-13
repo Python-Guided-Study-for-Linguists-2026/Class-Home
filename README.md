@@ -24,5 +24,82 @@ Thu Noon - 1:15pm @ 1325 CL
 - MS Teams for chats, questions, discussions, OH
 
 ### Course Schedule
+<table style="border-collapse: collapse; width: 61.2414%; height: 403.822px;" border="1">
+    <tbody>
+        <tr>
+            <td style="width: 27.3664%;">Date</td>
+            <td style="width: 51.8281%;">In-class review</td>
+            <td>Supplements</td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 1 (Jan 22)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">PyET: Ch.0 Introduction<br />Ch.1 Gearing Up for Python<br />Ch.2 Sec.1 Variables and Types</td>
+            <td></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 2 (Jan 29)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">PyET: Ch.2 Quickstart</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 3 (Feb 5)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">PyET: Ch.3 Basic Data Types</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 4 (Feb 12)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">PyET: Ch.4 Basic Data Structures</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 5 (Feb 19)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">PyET: Ch.5 Control Flow</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 6 (Feb 26)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">PyET: Ch.6 Functions</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 7 (Mar 5)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">PyET: Ch.10 Working with Files</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 99.9678%; height: 28.8444px; text-align: center;" colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ** spring break **</td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 8 (Mar 19)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">Review &amp; Practice: Python 3 Notes</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 9 (Mar 26)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">Corpus Linguistics Workshop Day 1, 2</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 10 (Apr 2)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">Corpus Linguistics Workshop Day 3</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 11 (Apr 9)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">Corpus Linguistics Workshop Day 4</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 12 (Apr 16)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">Final Project: BU vs. JA EFL Writing (1)</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+        <tr style="height: 28.8444px;">
+            <td style="width: 27.3664%; height: 28.8444px;">Meeting 13 (Apr 23)</td>
+            <td style="width: 51.8281%; height: 28.8444px;">Final Project: BU vs. JA EFL Writing (2)</td>
+            <td style="width: 20.7733%; height: 28.8444px;"></td>
+        </tr>
+    </tbody>
+</table>
 
 ### Course Flyer 
