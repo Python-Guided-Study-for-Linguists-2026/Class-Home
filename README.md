@@ -1,5 +1,5 @@
 # Python Guided Study
-- Offered through LING 2990/3990 Independent Study, University of Pittsburgh
+- Offered through LING 2990/3990 Independent Study (1 credit), University of Pittsburgh
 - Class meetings: Thu Noon-1:15pm @ 1325 CL
 
 ### Instructor/Guide
@@ -26,7 +26,7 @@
         <tr>
             <td style="width: 27.3664%;">Date</td>
             <td style="width: 51.8281%;">In-class review</td>
-            <td>Supplements</td>
+            <td>Meeting notes</td>
         </tr>
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 1 (Jan 22)</td>
