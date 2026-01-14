@@ -1,4 +1,4 @@
-# Python Guided Study
+# A Guided Study: Python Programming for Linguists
 - Offered through LING 2990/3990 Independent Study (1 credit), University of Pittsburgh
 - Class meetings: Thu Noon-1:15pm @ 1325 CL
 
