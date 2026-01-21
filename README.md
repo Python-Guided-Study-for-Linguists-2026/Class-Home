@@ -31,7 +31,7 @@
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 1 (Jan 22)</td>
             <td style="width: 51.8281%; height: 28.8444px;">PyET: Ch.0 Introduction<br />Ch.1 Gearing Up for Python<br />Ch.2 Sec.1 Variables and Types</td>
-            <td></td>
+            <td><a href="meeting-notes.md#meeting-1-jan-22"notes</a></td>
         </tr>
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 2 (Jan 29)</td>
