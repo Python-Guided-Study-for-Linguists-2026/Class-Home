@@ -34,10 +34,10 @@
 ## Meeting 2 (Jan 29)
 
 ### Review points
-- New mode of running Python: executing a Python script file (e.g., `hello.py`)
-- Python shell vs. Jupyter Notebook. Differences?
+- New mode of running Python: executing a Python script file (e.g., `hello.py`) in a console (cmd or Terminal). Windows users should run `python hello.py` and Mac users should run `python3 hello.py`. 
+- Python script vs. Python interactive shell vs. Jupyter Notebook. Differences?
 - Printing vs. returning. What's the difference? 
-- A `list` is mutable, but a `str` is immutable. Compare:
+- A `list` is mutable (= can be directly modified), but a `str` is immutable. Compare:
 ```
 >>> foo = 'hello'
 >>> foo.upper()
@@ -45,17 +45,18 @@
 >>> foo
 'hello'                # foo has not changed
 >>> mylist = [1,2,3,4,5]
->>> mylist.append(6)   # modifies mylist, returns nothing
+>>> mylist.append(6)   # modifies mylist in memory, returns nothing
 >>> mylist
 [1, 2, 3, 4, 5, 6]     # mylist has changed
 ```  
+- How can we insert an element into a list? Try `dir(list)` to display all list methods. Once you spotted a method that looks good, say 'insert',  look up the usage using `help(list.insert)`. 
 - "Code challenge: Factorials", how was it?
     - CoderPad interface is not intuitive: it does not let you actually test out your code! Instead, use your JNB: create a function in a code cell, then test it out yourself with a few additional code cells below. Repeat the process as you refine your function. When it is in a good shape, paste it in your code into CoderPad to verify. Fingers crossed it passes all tests! If not, more testing in JNB. 
 - Review the JNBs. Questions? Confusing spots?
 
 ### Next week
 - PyET: Ch.3 "Basic Data Types" covers basic data types of numbers (`int`, `float`), boolean (`True`, `False`), and strings (`str`), and bytes. 
-    - **Strings** are our bread-and-butter, and PyET's coverage is nowhere sufficient! Make sure to go deeper on strings by studying the supplementary materials. 
+    - **Strings** are our bread-and-butter, and PyET's coverage is nowhere sufficient! Make sure to go deeper on strings by studying the supplementary materials, especially Na-Rae's Python 3 Notes.  
 - "Code challenge: hex conversion" at the end. Don't forget to code outside of CoderPad! 
 
 
