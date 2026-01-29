@@ -36,7 +36,7 @@
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 2 (Jan 29)</td>
             <td style="width: 51.8281%; height: 28.8444px;">PyET: Ch.2 Quickstart</td>
-            <td style="width: 20.7733%; height: 28.8444px;"></td>
+            <td style="width: 20.7733%; height: 28.8444px;"><a href="meeting-notes.md#meeting-2-jan-29">notes</a></td>
         </tr>
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 3 (Feb 5)</td>

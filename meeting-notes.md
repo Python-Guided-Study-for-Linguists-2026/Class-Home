@@ -33,5 +33,19 @@
 
 ## Meeting 2 (Jan 29)
 
+### Review points
+- New mode of running Python: executing a Python script file (e.g., `hello.py`)
+- Python shell vs. Jupyter Notebook. Differences?
+- Printing vs. returning. What's the difference?
+- "Code challenge: Factorials", how was it?
+    - CoderPad interface is not intuitive: it does not actually let you actually test our your code! Instead, use JNB, Python shell, or Python script to code, test it out yourself, then paste in your code into CoderPad only to verify.
+- Review the JNBs. Questions? Confusing spots?
+- Learn with more code: Anne Dawson's example programs (link on Python 3 Notes)
+
+### Next week
+- PyET: Ch.3 "Basic Data Types" covers basic data types of numbers (`int`, `float`), boolean (`True`, `False`), and strings (`str`), and bytes. 
+    - **Strings** are our bread-and-butter, and PyET's coverage is nowhere sufficient! Make sure to go deeper on strings by studying the supplementary materials. 
+- "Code challenge: hex conversion" at the end. Don't forget to code outside of CoderPad! 
+
 
 ## Meeting 3 (Feb 5)
