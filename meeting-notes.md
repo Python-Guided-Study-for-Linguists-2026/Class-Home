@@ -49,6 +49,7 @@
 >>> mylist
 [1, 2, 3, 4, 5, 6]     # mylist has changed
 ```  
+- And, that is precisely why this code bit is wrong: `mylist = mylist.append(6)` while `foo = foo.upper()` is valid.  
 - How can we insert an element into a list? Try `dir(list)` to display all list methods. Once you spotted a method that looks good, say 'insert',  look up the usage using `help(list.insert)`. 
 - "Code challenge: Factorials", how was it?
     - CoderPad interface is not intuitive: it does not let you actually test out your code! Instead, use your JNB: create a function in a code cell, then test it out yourself with a few additional code cells below. Repeat the process as you refine your function. When it is in a good shape, paste it in your code into CoderPad to verify. Fingers crossed it passes all tests! If not, more testing in JNB. 
