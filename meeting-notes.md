@@ -36,11 +36,22 @@
 ### Review points
 - New mode of running Python: executing a Python script file (e.g., `hello.py`)
 - Python shell vs. Jupyter Notebook. Differences?
-- Printing vs. returning. What's the difference?
+- Printing vs. returning. What's the difference? 
+- A `list` is mutable, but a `str` is immutable. Compare:
+```
+>>> foo = 'hello'
+>>> foo.upper()
+'HELLO'                # returns a new string
+>>> foo
+'hello'                # foo has not changed
+>>> mylist = [1,2,3,4,5]
+>>> mylist.append(6)   # modifies mylist, returns nothing
+>>> mylist
+[1, 2, 3, 4, 5, 6]     # mylist has changed
+```  
 - "Code challenge: Factorials", how was it?
-    - CoderPad interface is not intuitive: it does not actually let you actually test our your code! Instead, use JNB, Python shell, or Python script to code, test it out yourself, then paste in your code into CoderPad only to verify.
+    - CoderPad interface is not intuitive: it does not let you actually test out your code! Instead, use your JNB: create a function in a code cell, then test it out yourself with a few additional code cells below. Repeat the process as you refine your function. When it is in a good shape, paste it in your code into CoderPad to verify. Fingers crossed it passes all tests! If not, more testing in JNB. 
 - Review the JNBs. Questions? Confusing spots?
-- Learn with more code: Anne Dawson's example programs (link on Python 3 Notes)
 
 ### Next week
 - PyET: Ch.3 "Basic Data Types" covers basic data types of numbers (`int`, `float`), boolean (`True`, `False`), and strings (`str`), and bytes. 
