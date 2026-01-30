@@ -38,7 +38,7 @@
 - Python script vs. Python interactive shell vs. Jupyter Notebook. Differences?
 - Printing vs. returning. What's the difference? 
 - A `list` is mutable (= can be directly modified), but a `str` is immutable. Compare:
-```
+```python
 >>> foo = 'hello'
 >>> foo.upper()
 'HELLO'                # returns a new string
@@ -62,3 +62,6 @@
 
 
 ## Meeting 3 (Feb 5)
+
+### Review points
+- Strings mega review! 
