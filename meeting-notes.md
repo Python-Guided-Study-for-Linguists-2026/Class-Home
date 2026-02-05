@@ -38,7 +38,7 @@
 - Python script vs. Python interactive shell vs. Jupyter Notebook. Differences?
 - Printing vs. returning. What's the difference? 
 - A `list` is mutable (= can be directly modified), but a `str` is immutable. Compare:
-```pycon
+```python
 >>> foo = 'hello'
 >>> foo.upper()
 'HELLO'                # returns a new string
@@ -73,24 +73,23 @@
 - Practice: Pig Latin generator
     - https://sites.pitt.edu/~naraehan/ling1330/ex2.html
 	- First, build the following helper functions: 
-```python
->>> vowelIndex('chair')
-2
->>> getInitialCs('chair')    # should call vowelIndex()
-'ch'
->>> getTheRest('chair')      # should call vowelIndex()
-'air'
-```
-
+	```python
+	>>> vowelIndex('chair')
+	2
+	>>> getInitialCs('chair')    # should call vowelIndex()
+	'ch'
+	>>> getTheRest('chair')      # should call vowelIndex()
+	'air'
+    ```
 
     - Then, build `pigLatinWord()` that converts a word to its pig Latin counterpart:
 
-```python
->>> pigLatinWord('chair')
-'airchay'
->>> pigLatinWord('egg')
-'eggway'
-```
+	```python
+	>>> pigLatinWord('chair')
+	'airchay'
+	>>> pigLatinWord('egg')
+	'eggway'
+	```
 
 ### Next week
 - PyET: Ch.4 "Basic Data Structures" covers important data objects with internal structures: lists, tuples, sets, and dictionaries. 
