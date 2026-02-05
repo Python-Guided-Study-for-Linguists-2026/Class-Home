@@ -64,4 +64,35 @@
 ## Meeting 3 (Feb 5)
 
 ### Review points
-- Strings mega review! 
+- Strings mega review!
+    - String methods, testing, transformation, indexing, slicing
+	- Special characters, escaping
+	- Splitting and joining strings
+	- String formatting with f-strings:`f"...{ }"`
+- "Overloaded" operators: `in`, `+`, `*`
+- Practice: Pig Latin generator
+    - https://sites.pitt.edu/~naraehan/ling1330/ex2.html
+	- First, build the following helper functions: 
+```python
+>>> vowelIndex('chair')
+2
+>>> getInitialCs('chair')    # should call vowelIndex()
+'ch'
+>>> getTheRest('chair')      # should call vowelIndex()
+'air'
+```
+    - Then, build `pigLatinWord()` that converts a word to its pig Latin counterpart:
+```python
+>>> pigLatinWord('chair')
+'airchay'
+>>> pigLatinWord('egg')
+'eggway'
+```
+
+### Next week
+- PyET: Ch.4 "Basic Data Structures" covers important data objects with internal structures: lists, tuples, sets, and dictionaries. 
+   - That rounds up all essential building blocks of Python's built-in data types. Make sure to _apply_! Try building interesting and complex data structures with language examples. 
+   - Also: practice how to _transform_ one data format to another: build a list of characters from a string, a set from a list, a list from a dictionary, a list of (key, value) tuples from a dictionary, etc. 
+   - **list comprehension** is an essential python skill. Practice this! Na-Rae's Python 3 Notes has fun examples. 
+   - "Code challenge: Encoding ASCII art" should be pretty straightforward.
+- Additional practice: Finish up the Pig Latin generator code: `pigLatinSent()` should handle a full sentence input such as 'Linguistics is hard.' to output 'Inguisticslay isway ardhay.'.
