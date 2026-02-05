@@ -81,7 +81,10 @@
 >>> getTheRest('chair')      # should call vowelIndex()
 'air'
 ```
+
+
     - Then, build `pigLatinWord()` that converts a word to its pig Latin counterpart:
+
 ```python
 >>> pigLatinWord('chair')
 'airchay'
