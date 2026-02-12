@@ -103,13 +103,12 @@
 ## Meeting 4 (Feb 12)
 
 ### Review points
+- Na-Rae's Python shell session form today: [2026-02-12-python-shell.html](2026-02-12-python-shell.html)
 - Data structures mega review! 
    - Converting between data structures
 - List comprehension is a super power! Practice until you can list-comprehend in your sleep 
 - Sorting lists, dictionaries, and tuples
-- Practice: Pig Latin script wrap
-- Practice: palindromes (if time)
-- Introduction: the `NLTK` library (if time)
+- Practice: Pig Latin script wrap. Key script here: [pig_latin.KEY.py](pig_latin.KEY.py)
 - Let's share code! Please share your Python notes and Jupyter notebooks in the "Sandbox" repository. 
 
 ### Next week
@@ -120,7 +119,7 @@
 	verbs = input("What are your verbs? (Type EXIT to quit): ")
 	```
    - You can compose a python script (`.py`) or a Jupyter Notebook (`.ipynb`). When done, rename your file with your name (say, `verbs_valeria.py`) and upload it to the `hw_verbs` folder of our Sandbox GitHub repository. 
-- What about the "Finding Prime Number Faster" challenge? This one is... "meh". Give it a try if want. 
+- What about the "Finding Prime Number Faster" challenge? This one is... "meh". Give it a try if you want. 
 
 
 ## Meeting 5 (Feb 19)
