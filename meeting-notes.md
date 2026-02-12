@@ -98,3 +98,34 @@
    - **list comprehension** is an essential python skill. Practice this! Na-Rae's Python 3 Notes has fun examples. 
    - "Code challenge: Encoding ASCII art" should be pretty straightforward.
 - Additional practice: Finish up the Pig Latin generator code: `pigLatinSent()` should handle a full sentence input such as 'Linguistics is hard.' to output 'Inguisticslay isway ardhay.'.
+
+
+## Meeting 4 (Feb 12)
+
+### Review points
+- Data structures mega review! 
+   - Converting between data structures
+- List comprehension is a super power! Practice until you can list-comprehend in your sleep 
+- Sorting lists, dictionaries, and tuples
+- Practice: Pig Latin script wrap
+- Practice: palindromes (if time)
+- Introduction: the `NLTK` library (if time)
+- Let's share code! Please share your Python notes and Jupyter notebooks in the "Sandbox" repository. 
+
+### Next week
+- PyET: Ch.5 "Control Flow" is a small module: it should be quick to finish, giving you lots of free time. 
+- Which means... **HOMEWORK time**! Please work on this "Past tense generator" problem before our next meeting. https://sites.pitt.edu/~naraehan/ling1901/HW2.pdf
+   - You will need to use the `input()` function. If you're not familiar, it prompts the user to type in something. Below, the user input is assigned to the variable `verbs`:
+	```
+	verbs = input("What are your verbs? (Type EXIT to quit): ")
+	```
+   - You can compose a python script (`.py`) or a Jupyter Notebook (`.ipynb`). When done, rename your file with your name (say, `verbs_valeria.py`) and upload it to the `hw_verbs` folder of our Sandbox GitHub repository. 
+- What about the "Finding Prime Number Faster" challenge? This one is... "meh". Give it a try if want. 
+
+
+## Meeting 5 (Feb 19)
+
+### Review points
+- review
+
+
