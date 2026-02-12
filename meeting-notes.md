@@ -103,7 +103,7 @@
 ## Meeting 4 (Feb 12)
 
 ### Review points
-- Na-Rae's Python shell session form today: [2026-02-12-python-shell.html](2026-02-12-python-shell.html)
+- Na-Rae's Python shell session form today: [2026-02-12-python-shell.html.pdf](2026-02-12-python-shell.html.pdf)
 - Data structures mega review! 
    - Converting between data structures
 - List comprehension is a super power! Practice until you can list-comprehend in your sleep 
