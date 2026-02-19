@@ -160,11 +160,11 @@
     >>> findPalindromes(footxt)
     ['a', 'noon']
 	```
-	5. Now for something different! From the various "US states" data objects found on my "text samples" page, build the following object called `states_data`, which is a list of 4-element tuples: `(state, state code, capital, population)`. You will want to use list comprehension.
+	5. Now for something different! From the various "US states" data objects found on my "text samples" page, build the following object called `states_data`, which is a list of 4-element tuples: `(state, STATE-CODE, capital, population)`. You will want to use list comprehension.
 	```python
 	>>> states_data[:3]
-    [('Alabama', 'al', 'Montgomery', 4833722), ('Alaska', 'ak', 'Juneau', 735132),
-    ('Arizona', 'az', 'Phoenix', 6626624)]
+    [('Alabama', 'AL', 'Montgomery', 4833722), ('Alaska', 'AK', 'Juneau', 735132),
+    ('Arizona', 'AZ', 'Phoenix', 6626624)]
 	```
 	6. Recall that `sorted()` takes a list and returns a sorted list. You can optionally specify a function to use for sorting, like the `len()` function below.
 	```python
@@ -185,9 +185,9 @@
 	7. One last problem! Sort the `states_data` by population, again using a labmda function:
 	```python
 	>>> sorted(states_data, key=...??..., reverse=True)[:5]
-    [('California', 'ca', 'Sacramento', 38332521), ('Texas', 'tx', 'Austin', 26448193), 
-	('New York', 'ny', 'Albany', 19651127), ('Florida', 'fl', 'Tallahassee', 19552860), 
-	('Illinois', 'il', 'Springfield', 12882135)]
+    [('California', 'CA', 'Sacramento', 38332521), ('Texas', 'TX', 'Austin', 26448193), 
+	('New York', 'NY', 'Albany', 19651127), ('Florida', 'FL', 'Tallahassee', 19552860), 
+	('Illinois', 'IL', 'Springfield', 12882135)]
 	```
 	
 
