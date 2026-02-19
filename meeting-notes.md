@@ -125,6 +125,75 @@
 ## Meeting 5 (Feb 19)
 
 ### Review points
-- review
+- Review: "Verbs" homework
 
+
+### Next week
+- PyET: Ch.6 "Functions" is another short one, although packed with high-level concepts. The examples Ryan uses are _very_ abstract -- try coming up your own, more "fun and memorable" example functions! 
+    - The "Functions and Variables" vid showcases a useful routine: text processing. Also, it shows the lambda function, which is important. Make sure to spend time with these. 
+- Code challenge "Sum of triangles" is more of a brain teaser. Give it a try. 
+- **Homework** problems below. I recommend starting out in Python shell and composing a Jupyter Notebook. Upload your JNB file in the `hw_palin_lambda` folder of our Sandbox repo.  
+    1. Build a function called `getRev()`, which reverses a string and returns it. It should work as follows:
+	```python
+	>>> getRev('platypus')
+    'supytalp'
+    >>> getRev('tenet')
+    'tenet'
+	```
+	2. Build a function called `isPalindrome()`, which returns True/False on palindromehood. It should work as follows:
+	```python
+	>>> isPalindrome('hello')
+    False
+    >>> isPalindrome('noon')
+    True
+	```
+	3. Build a function `remPunct()` that removes all punctuation in a given string. It should work as follows:
+	```python
+	>>> remPunct("Hello, world!")
+    'Hello world'
+    >>> remPunct("Mr.")
+    'Mr'
+	```
+	4. Build a function `findPalindromes()` that returns a list of all word tokens in a given text that's a palindrome.  
+    ```python
+	>>> footxt = "I'm meeting a platypus at noon!"
+    >>> findPalindromes(footxt)
+    ['a', 'noon']
+	```
+	5. Now for something different! From the various "US states" data objects found on my "text samples" page, build the following object called `states_data`, which is a list of 4-element tuples: `(state, state code, capital, population)`. You will want to use list comprehension.
+	```python
+	>>> states_data[:3]
+    [('Alabama', 'al', 'Montgomery', 4833722), ('Alaska', 'ak', 'Juneau', 735132),
+    ('Arizona', 'az', 'Phoenix', 6626624)]
+	```
+	6. Recall that `sorted()` takes a list and returns a sorted list. You can optionally specify a function to use for sorting, like the `len()` function below.
+	```python
+    >>> mylist = ['eel', 'monkey', 'ant', 'beekeeper']
+    >>> sorted(mylist)
+    ['ant', 'beekeeper', 'eel', 'monkey']
+    >>> sorted(mylist, key=len)
+    ['eel', 'ant', 'monkey', 'beekeeper']
+    >>> sorted(mylist, key=len, reverse=True)
+    ['beekeeper', 'monkey', 'eel', 'ant']
+
+	```
+	The `key=` option can take any function, lambda functions included! Compose a sorting syntax with a **lambda function** that sorts a list of words by the number of 'e' in them, from largest to smallest:
+	```python
+	>>> sorted(mylist, key=...??..., reverse=True)
+    ['beekeeper', 'eel', 'monkey', 'ant']
+	```
+	7. One last problem! Sort the `states_data` by population, again using a labmda function:
+	```python
+	>>> sorted(states_data, key=...??..., reverse=True)[:5]
+    [('California', 'ca', 'Sacramento', 38332521), ('Texas', 'tx', 'Austin', 26448193), 
+	('New York', 'ny', 'Albany', 19651127), ('Florida', 'fl', 'Tallahassee', 19552860), 
+	('Illinois', 'il', 'Springfield', 12882135)]
+	```
+	
+
+
+## Meeting 6 (Feb 26)
+
+### Review points
+- review...
 

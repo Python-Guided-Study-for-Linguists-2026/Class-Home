@@ -51,7 +51,7 @@
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 5 (Feb 19)</td>
             <td style="width: 51.8281%; height: 28.8444px;">PyET: Ch.5 Control Flow</td>
-            <td style="width: 20.7733%; height: 28.8444px;"></td>
+            <td style="width: 20.7733%; height: 28.8444px;"><a href="meeting-notes.md#meeting-5-feb-19">notes</a></td>
         </tr>
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 6 (Feb 26)</td>
