@@ -182,7 +182,7 @@
 	>>> sorted(mylist, key=...??..., reverse=True)
     ['beekeeper', 'eel', 'monkey', 'ant']
 	```
-	7. One last problem! Sort the `states_data` by population, again using a labmda function:
+	7. One last problem! Sort the `states_data` by population, again using a lambda function:
 	```python
 	>>> sorted(states_data, key=...??..., reverse=True)[:5]
     [('California', 'CA', 'Sacramento', 38332521), ('Texas', 'TX', 'Austin', 26448193), 
@@ -195,5 +195,39 @@
 ## Meeting 6 (Feb 26)
 
 ### Review points
-- review...
+- Review: "Palindromes and lambda functions" homework
+- Practice: functions, lambda
+- Introducing the [NLTK library](https://www.nltk.org/): install and download NLTK data pack
+   - In terminal: `pip3 install nltk`
+   - In Python: 
+   ```python
+   import nltk
+   nltk.download("book")
+   ```
+   - Mac folks: if `nltk.download()` does not work, you haven't done the step of installing certificates while installing Python. Complete it following the [instructions here](https://docs.python.org/3/using/mac.html). 
+   - Word tokenization with nltk: 
+   ```python
+   >>> foostr = "You haven't seen Star Wars yet...?"
+   >>> nltk.word_tokenize(foostr)
+    ```
+
+### Next week
+- PyET: Ch.10 "Working with Files"
+   - File IO is surprisingly tricky. Don't put this one off -- start early so you can come to my office hours for help. 
+   - You can skip the "JSON" module. Unless you already know what JSON is, it's too early to be useful to you. 
+   - Ryan doesn't make it explicit, but all files to be read-in and written-out should be in the same folder as your Python script. 
+   - Important! Ryan only demonstrates reading in individual _lines_, but the method we linguists use more often is `f.read()`, which reads in the entire content of a file as a single string. Make sure to learn this: details in A11 [File Reading & Writing Methods](https://sites.pitt.edu/~naraehan/python3/reading_writing_methods.html).  
+- Code challenge "Compressing ASCII art" --> you should skip. Instead, practice on your own! 
+- **Homework** problems below. They are suggestions meant to help you practice. You are encouraged to explore and do your own thing! Share your work (script or Jupyter Notebook) in the `hw_fileio` folder of our Sandbox repo.
+   - Practice writing a CSV file. Here's a [reference screenshot](screenshot_states_data.png), which contains various data points about US states. The content should look familiar -- it's all in the `states_data` object! Start with this object, and then create the CSV file on your laptop through file writing. 
+        - After that, read in your CSV file and do something interesting with it. 
+   - From Peter Norvig's [Beautiful Data](https://norvig.com/ngrams/) site, download `enable1.txt`, which contains a list of English words. Read in the file and process it as a list object called `words`. Then, explore it and make interesting discoveries. Suggestions: Are 'syntax' and 'syntactician' in the list? How many words without 'aeiouy'? How many palindromes are there? What is the longest word? What's the word with the largest number of 'e'? How to cheat on [this WORDLE problem](Wordle-problem.png)? 
+   - You now have the power of processing text files! Good sample text files are `tale.txt`, `gettysburg_address.txt` and `gift-of-magi.txt`, all linked at the bottom left of my [Python 3 Notes](https://sites.pitt.edu/~naraehan/python3/). Try doing some text processing with NLTK. 
+
+
+## Meeting 7 (Mar 5)
+
+### Review points
+- File IO and CWD. What about files _elsewhere_ on your laptop, like on your Desktop? You need to know about file path and CWD ("current working directory"). Study my Python 3 Notes: A10 [File Path and CWD](https://sites.pitt.edu/~naraehan/python3/file_path_cwd.html), A11 [File Reading & Writing Methods](https://sites.pitt.edu/~naraehan/python3/reading_writing_methods.html). 
+
 
