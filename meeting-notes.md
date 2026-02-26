@@ -196,7 +196,6 @@
 
 ### Review points
 - Review: "Palindromes and lambda functions" homework
-- Practice: functions, lambda
 - Introducing the [NLTK library](https://www.nltk.org/): install and download NLTK data pack
    - In terminal: `pip3 install nltk`
    - In Python: 
@@ -209,7 +208,15 @@
    ```python
    >>> foostr = "You haven't seen Star Wars yet...?"
    >>> nltk.word_tokenize(foostr)
+   ['You', 'have', "n't", 'seen', 'Star', 'Wars', 'yet', '...', '?']
     ```
+	- Sentence tokenization with nltk:
+	```python
+	>>> foostr2 = "Hello, earthlings! I come in peace. Take me to your leader."
+	>>> nltk.sent_tokenize(foostr2)
+	['Hello, earthlings!', 'I come in peace.', 'Take me to your leader.']
+
+	```
 
 ### Next week
 - PyET: Ch.10 "Working with Files"
