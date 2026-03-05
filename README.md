@@ -61,7 +61,7 @@
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 7 (Mar 5)</td>
             <td style="width: 51.8281%; height: 28.8444px;">PyET: Ch.10 Working with Files</td>
-            <td style="width: 20.7733%; height: 28.8444px;"></td>
+            <td style="width: 20.7733%; height: 28.8444px;"><a href="meeting-notes.md#meeting-7-mar-5">notes</a></td>
         </tr>
         <tr style="height: 28.8444px;">
             <td style="width: 99.9678%; height: 28.8444px; text-align: center;" colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ** spring break **</td>

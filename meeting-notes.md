@@ -1,6 +1,6 @@
 # Meeting Notes
 
-## Meeting 1 (Jan 22)
+# Meeting 1 (Jan 22)
 
 ### Housekeeping: your Python environment, workflow 
 - Create your project folder where you will keep all study materials, python scripts, etc. 
@@ -31,7 +31,7 @@
 - "Code challenge: Factorials" at the end. Give it your best shot.
 
 
-## Meeting 2 (Jan 29)
+# Meeting 2 (Jan 29)
 
 ### Review points
 - New mode of running Python: executing a Python script file (e.g., `hello.py`) in a console (cmd or Terminal). Windows users should run `python hello.py` and Mac users should run `python3 hello.py`. 
@@ -61,7 +61,7 @@
 - "Code challenge: hex conversion" at the end. Don't forget to code outside of CoderPad! 
 
 
-## Meeting 3 (Feb 5)
+# Meeting 3 (Feb 5)
 
 ### Review points
 - Strings mega review!
@@ -100,7 +100,7 @@
 - Additional practice: Finish up the Pig Latin generator code: `pigLatinSent()` should handle a full sentence input such as 'Linguistics is hard.' to output 'Inguisticslay isway ardhay.'.
 
 
-## Meeting 4 (Feb 12)
+# Meeting 4 (Feb 12)
 
 ### Review points
 - Na-Rae's Python shell session form today: [2026-02-12-python-shell.html.pdf](2026-02-12-python-shell.html.pdf)
@@ -122,7 +122,7 @@
 - What about the "Finding Prime Number Faster" challenge? This one is... "meh". Give it a try if you want. 
 
 
-## Meeting 5 (Feb 19)
+# Meeting 5 (Feb 19)
 
 ### Review points
 - Review: "Verbs" homework
@@ -192,7 +192,7 @@
 	
 
 
-## Meeting 6 (Feb 26)
+# Meeting 6 (Feb 26)
 
 ### Review points
 - Review: "Palindromes and lambda functions" homework
@@ -232,9 +232,27 @@
    - You now have the power of processing text files! Good sample text files are `tale.txt`, `gettysburg_address.txt` and `gift-of-magi.txt`, all linked at the bottom left of my [Python 3 Notes](https://sites.pitt.edu/~naraehan/python3/). Try doing some text processing with NLTK. 
 
 
-## Meeting 7 (Mar 5)
+# Meeting 7 (Mar 5)
 
 ### Review points
-- File IO and CWD. What about files _elsewhere_ on your laptop, like on your Desktop? You need to know about file path and CWD ("current working directory"). Study my Python 3 Notes: A10 [File Path and CWD](https://sites.pitt.edu/~naraehan/python3/file_path_cwd.html), A11 [File Reading & Writing Methods](https://sites.pitt.edu/~naraehan/python3/reading_writing_methods.html). 
+- File IO and CWD. What about files _elsewhere_ on your laptop, like on your Desktop? You need to know about file path and CWD ("current working directory"). Details in my Python 3 Notes: 
+   - A10 [File Path and CWD](https://sites.pitt.edu/~naraehan/python3/file_path_cwd.html)
+   - A11 [File Reading & Writing Methods](https://sites.pitt.edu/~naraehan/python3/reading_writing_methods.html). 
+- HW review
 
 
+### Next meeting (after spring break)
+- Review of my [Python 3 Notes](https://sites.pitt.edu/~naraehan/python3/). With the exception of "Regular Expressions", all notes/topics should be familiar to you now! Review and patch any gaps in knowledge. 
+- **Homework**: Just focus on catching up and further practicing, and upload your work in the `hw_review` folder. Suggestions:
+   - Revisit materials from last few meetings. Take a look at HW submissions submitted by classmates, discover different/better ways of solving a problem. 
+   - Catch up! Review missed topics, practice text processing with NLTK. 
+   - Review my Python 3 Notes. 
+
+
+
+# Meeting 8 (Mar 19)
+
+### Review points
+- Go over Na-Rae's [Python 3 Notes](https://sites.pitt.edu/~naraehan/python3/)
+    - New topic: regular expressions https://sites.pitt.edu/~naraehan/python3/re.html
+	
