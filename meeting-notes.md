@@ -103,7 +103,7 @@
 # Meeting 4 (Feb 12)
 
 ### Review points
-- Na-Rae's Python shell session form today: [2026-02-12-python-shell.html.pdf](2026-02-12-python-shell.html.pdf)
+- Na-Rae's Python shell session from today: [2026-02-12-python-shell.html.pdf](2026-02-12-python-shell.html.pdf)
 - Data structures mega review! 
    - Converting between data structures
 - List comprehension is a super power! Practice until you can list-comprehend in your sleep 
@@ -239,6 +239,8 @@
    - A10 [File Path and CWD](https://sites.pitt.edu/~naraehan/python3/file_path_cwd.html)
    - A11 [File Reading & Writing Methods](https://sites.pitt.edu/~naraehan/python3/reading_writing_methods.html). 
 - HW review
+   - Your code returns an output, say a number. But... is it correct? Don't assume it is, _validate_. Knowing how to validate is the important last piece in your Python skillset. Make a habit out of validating! 
+   - Na-Rae's Python shell session from today: [2026-03-05-python-shell.html.pdf](2026-03-05-python-shell.html.pdf)
 
 
 ### Next meeting (after spring break)

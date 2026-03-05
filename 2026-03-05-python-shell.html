@@ -1,0 +1,313 @@
+<html>
+<head>
+<style>
+/* body{ font-family: serif;} */  /* because of pre-tag, font family isn't needed */
+span {white-space: pre-wrap}  /* enables line wrap, no space collapsing */
+span.pycom { color: red;}
+span.pyout { color: mediumblue;}
+span.pyerr { color: red;}
+span.pyprm { color: deeppink;}
+span.pystr { color: limegreen;}  /* jade green is #00A36C */
+</style>
+</head>
+<body>
+<pre>
+
+<span class='pyout'>C:\Users\Jane Eyre>cd Desktop</span>
+
+<span class='pyout'>C:\Users\Jane Eyre\Desktop>cd Python-Study</span>
+
+<span class='pyout'>C:\Users\Jane Eyre\Desktop\Python-Study>cd</span>
+<span class='pyout'>C:\Users\Jane Eyre\Desktop\Python-Study</span>
+
+<span class='pyout'>C:\Users\Jane Eyre\Desktop\Python-Study>python</span>
+Python 3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+<span class='pyprm'>>>></span> import os
+<span class='pyprm'>>>></span> os.getcwd()
+<span class='pyout'>'C:\\Users\\Jane Eyre\\Desktop\\Python-Study'</span>
+<span class='pyprm'>>>></span> os.listdir()
+<span class='pyout'>['.ipynb_checkpoints', 'Exercise Files', 'foo.py', 'hello.py', 'meeting2.ipynb', 'Meeting3.ipynb']</span>
+<span class='pyprm'>>>></span> os.listdir()
+<span class='pyout'>['.ipynb_checkpoints', 'enable1.txt', 'Exercise Files', 'foo.py', 'hello.py', 'meeting2.ipynb', 'Meeting3.ipynb']</span>
+<span class='pyprm'>>>></span> f = open(<span class='pystr'>'enable1.txt'</span>, <span class='pystr'>'r'</span>)
+<span class='pyprm'>>>></span> enable = f.read()
+<span class='pyprm'>>>></span> f.close()
+<span class='pyprm'>>>></span> type(enable)
+<span class='pyout'><class 'str'></span>
+<span class='pyprm'>>>></span> len(enable)
+<span class='pyout'>1743327</span>
+<span class='pyprm'>>>></span> enable[:30]
+<span class='pyout'>'aa\naah\naahed\naahing\naahs\naal\na'</span>
+<span class='pyprm'>>>></span> print(enable[:30])
+<span class='pyout'>aa</span>
+<span class='pyout'>aah</span>
+<span class='pyout'>aahed</span>
+<span class='pyout'>aahing</span>
+<span class='pyout'>aahs</span>
+<span class='pyout'>aal</span>
+<span class='pyout'>a</span>
+<span class='pyprm'>>>></span> enable.split()[:20]
+<span class='pyout'>['aa', 'aah', 'aahed', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark', 'aardvarks', 'aardwolf', 'aardwolves','aargh', 'aarrgh', 'aarrghh', 'aas', 'aasvogel', 'aasvogels', 'ab']</span>
+<span class='pyprm'>>>></span> enable.split()[-20:]
+<span class='pyout'>['zymases', 'zyme', 'zymes', 'zymogen', 'zymogene', 'zymogenes', 'zymogens', 'zymogram', 'zymograms', 'zymologies', 'zymology', 'zymosan', 'zymosans', 'zymoses', 'zymosis', 'zymotic', 'zymurgies', 'zymurgy', 'zyzzyva', 'zyzzyvas']</span>
+<span class='pyprm'>>>></span> words = enable.split()
+<span class='pyprm'>>>></span> words[:10]
+<span class='pyout'>['aa', 'aah', 'aahed', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark']</span>
+<span class='pyprm'>>>></span> len(words)
+<span class='pyout'>172820</span>
+<span class='pyprm'>>>></span> len(enable)
+<span class='pyout'>1743327</span>
+<span class='pyprm'>>>></span> <span class='pystr'>'syntax'</span> in words
+<span class='pyout'>True</span>
+<span class='pyprm'>>>></span> <span class='pystr'>'syntactician'</span> in words
+<span class='pyout'>False</span>
+<span class='pyprm'>>>></span> sorted(words, key=len, reverse=True)[:10]
+<span class='pyout'>['ethylenediaminetetraacetates', 'electroencephalographically', 'ethylenediaminetetraacetate', 'immunoelectrophoretically', 'phosphatidylethanolamines', 'dichlorodifluoromethanes', 'electrocardiographically', 'electroencephalographers', 'electroencephalographies', 'intercomprehensibilities']</span>
+<span class='pyprm'>>>></span> [x for x in sorted(words, key=len, reverse=True)[:10]]
+<span class='pyout'>['ethylenediaminetetraacetates', 'electroencephalographically', 'ethylenediaminetetraacetate', 'immunoelectrophoretically', 'phosphatidylethanolamines', 'dichlorodifluoromethanes', 'electrocardiographically', 'electroencephalographers', 'electroencephalographies', 'intercomprehensibilities']</span>
+<span class='pyprm'>>>></span> [(x, len(s)) for x in sorted(words, key=len, reverse=True)[:10]]
+<span class='pyout'>Traceback (most recent call last):</span>
+<span class='pyout'>  File "<python-input-22>", line 1, in <module></span>
+<span class='pyout'>    [(x, len(s)) for x in sorted(words, key=len, reverse=True)[:10]]</span>
+<span class='pyout'>             ^</span>
+<span class='pyout'>NameError: name 's' is not defined. Did you mean: 'os'?</span>
+<span class='pyprm'>>>></span> [(x, len(x)) for x in sorted(words, key=len, reverse=True)[:10]]
+<span class='pyout'>[('ethylenediaminetetraacetates', 28), ('electroencephalographically', 27), ('ethylenediaminetetraacetate', 27), ('immunoelectrophoretically', 25), ('phosphatidylethanolamines', 25), ('dichlorodifluoromethanes', 24), ('electrocardiographically', 24), ('electroencephalographers', 24), ('electroencephalographies', 24), ('intercomprehensibilities', 24)]</span>
+<span class='pyprm'>>>></span> sorted(words, key=lambda x: x.count(<span class='pystr'>'e'</span>), reverse=True)[:10]
+<span class='pyout'>KeyboardInterrupt</span>
+<span class='pyprm'>>>></span> <span class='pystr'>'beekeeper'</span>.count(<span class='pystr'>'e'</span>)
+<span class='pyout'>5</span>
+<span class='pyprm'>>>></span> sorted(words, key=lambda x: x.count(<span class='pystr'>'e'</span>), reverse=True)[:10]
+<span class='pyout'>['ethylenediaminetetraacetate', 'ethylenediaminetetraacetates', 'defenselessnesses', 'degeneratenesses', 'feeblemindednesses', 'heterogeneousnesses', 'hexamethylenetetramine', 'hexamethylenetetramines', 'levelheadednesses', 'regeneratenesses']</span>
+<span class='pyprm'>>>></span> [(x, x.count(<span class='pystr'>'e'</span>)) for x in sorted(words, key=lambda x: x.count(<span class='pystr'>'e'</span>), reverse=True)[:10]]
+<span class='pyout'>[('ethylenediaminetetraacetate', 7), ('ethylenediaminetetraacetates', 7), ('defenselessnesses', 6), ('degeneratenesses', 6), ('feeblemindednesses', 6), ('heterogeneousnesses', 6), ('hexamethylenetetramine', 6), ('hexamethylenetetramines', 6), ('levelheadednesses', 6), ('regeneratenesses', 6)]</span>
+<span class='pyprm'>>>></span> def isPalin(word):
+<span class='pyprm'>...</span>     return word == word[::-1]
+<span class='pyprm'>...</span>
+<span class='pyprm'>>>></span> isPalin(<span class='pystr'>'hello'</span>)
+<span class='pyout'>False</span>
+<span class='pyprm'>>>></span> isPalin(<span class='pystr'>'a'</span>)
+<span class='pyout'>True</span>
+<span class='pyprm'>>>></span> isPalin(<span class='pystr'>'kayak'</span>)
+<span class='pyout'>True</span>
+<span class='pyprm'>>>></span> [x for x in words if isPalin(x)][:20]
+<span class='pyout'>['aa', 'aba', 'abba', 'aga', 'aha', 'ala', 'alula', 'ama', 'ana', 'anna', 'ava', 'awa', 'bib', 'bob', 'boob', 'bub', 'civic','dad', 'deed', 'deified']</span>
+<span class='pyprm'>>>></span> pals = [x for x in words if isPalin(x)]
+<span class='pyprm'>>>></span> len(pals)
+<span class='pyout'>103</span>
+<span class='pyprm'>>>></span> pals
+<span class='pyout'>['aa', 'aba', 'abba', 'aga', 'aha', 'ala', 'alula', 'ama', 'ana', 'anna', 'ava', 'awa', 'bib', 'bob', 'boob', 'bub', 'civic','dad', 'deed', 'deified', 'deked', 'deled', 'denned', 'dewed', 'did', 'dud', 'eke', 'eme', 'ere', 'eve', 'ewe', 'eye', 'gag','gig', 'hah', 'halalah', 'hallah', 'heh', 'huh', 'kaiak', 'kayak', 'keek', 'kook', 'level', 'madam', 'marram', 'mem', 'mim', 'minim', 'mm', 'mom', 'mum', 'naan', 'nan', 'noon', 'nun', 'oho', 'otto', 'oxo', 'pap', 'peep', 'pep', 'pip', 'poop', 'pop', 'pullup', 'pup', 'radar', 'redder', 'refer', 'reifier', 'repaper', 'reviver', 'rotator', 'rotor', 'sagas', 'sees', 'selles', 'sememes', 'semes', 'seres', 'sexes', 'shahs', 'sis', 'solos', 'sos', 'stats', 'stets', 'sulus', 'tat', 'tenet', 'terret', 'tet', 'tit', 'toot', 'torot', 'tot', 'tut', 'ulu', 'vav', 'waw', 'wow', 'yay']</span>
+<span class='pyprm'>>>></span> [(len(x), x) for x in pals]
+<span class='pyout'>[(2, 'aa'), (3, 'aba'), (4, 'abba'), (3, 'aga'), (3, 'aha'), (3, 'ala'), (5, 'alula'), (3, 'ama'), (3, 'ana'), (4, 'anna'), (3, 'ava'), (3, 'awa'), (3, 'bib'), (3, 'bob'), (4, 'boob'), (3, 'bub'), (5, 'civic'), (3, 'dad'), (4, 'deed'), (7, 'deified'),(5, 'deked'), (5, 'deled'), (6, 'denned'), (5, 'dewed'), (3, 'did'), (3, 'dud'), (3, 'eke'), (3, 'eme'), (3, 'ere'), (3, 'eve'), (3, 'ewe'), (3, 'eye'), (3, 'gag'), (3, 'gig'), (3, 'hah'), (7, 'halalah'), (6, 'hallah'), (3, 'heh'), (3, 'huh'), (5, 'kaiak'), (5, 'kayak'), (4, 'keek'), (4, 'kook'), (5, 'level'), (5, 'madam'), (6, 'marram'), (3, 'mem'), (3, 'mim'), (5, 'minim'), (2, 'mm'), (3, 'mom'), (3, 'mum'), (4, 'naan'), (3, 'nan'), (4, 'noon'), (3, 'nun'), (3, 'oho'), (4, 'otto'), (3, 'oxo'), (3, 'pap'), (4, 'peep'), (3, 'pep'), (3, 'pip'), (4, 'poop'), (3, 'pop'), (6, 'pullup'), (3, 'pup'), (5, 'radar'), (6, 'redder'), (5, 'refer'), (7, 'reifier'), (7, 'repaper'), (7, 'reviver'), (7, 'rotator'), (5, 'rotor'), (5, 'sagas'), (4, 'sees'), (6, 'selles'), (7, 'sememes'), (5, 'semes'), (5, 'seres'), (5, 'sexes'), (5, 'shahs'), (3, 'sis'), (5, 'solos'), (3, 'sos'), (5, 'stats'), (5, 'stets'), (5, 'sulus'), (3, 'tat'), (5, 'tenet'), (6, 'terret'), (3, 'tet'), (3, 'tit'), (4, 'toot'), (5, 'torot'), (3, 'tot'), (3, 'tut'), (3, 'ulu'), (3, 'vav'), (3, 'waw'), (3, 'wow'), (3, 'yay')]</span>
+<span class='pyprm'>>>></span> sorted(pals, key=len, reverse=True)
+<span class='pyout'>['deified', 'halalah', 'reifier', 'repaper', 'reviver', 'rotator', 'sememes', 'denned', 'hallah', 'marram', 'pullup', 'redder', 'selles', 'terret', 'alula', 'civic', 'deked', 'deled', 'dewed', 'kaiak', 'kayak', 'level', 'madam', 'minim', 'radar', 'refer', 'rotor', 'sagas', 'semes', 'seres', 'sexes', 'shahs', 'solos', 'stats', 'stets', 'sulus', 'tenet', 'torot', 'abba', 'anna', 'boob', 'deed', 'keek', 'kook', 'naan', 'noon', 'otto', 'peep', 'poop', 'sees', 'toot', 'aba', 'aga', 'aha', 'ala', 'ama', 'ana', 'ava', 'awa', 'bib', 'bob', 'bub', 'dad', 'did', 'dud', 'eke', 'eme', 'ere', 'eve', 'ewe', 'eye', 'gag', 'gig', 'hah', 'heh', 'huh', 'mem', 'mim', 'mom', 'mum', 'nan', 'nun', 'oho', 'oxo', 'pap', 'pep', 'pip', 'pop', 'pup', 'sis', 'sos', 'tat', 'tet', 'tit', 'tot', 'tut', 'ulu', 'vav', 'waw', 'wow', 'yay', 'aa', 'mm']</span>
+<span class='pyprm'>>>></span> len(<span class='pystr'>'deified'</span>)
+<span class='pyout'>7</span>
+<span class='pyprm'>>>></span> [len(x), x for x in sorted(pals, key=len, reverse=True)]
+<span class='pyout'>  File "<python-input-38>", line 1</span>
+<span class='pyout'>    [len(x), x for x in sorted(pals, key=len, reverse=True)]</span>
+<span class='pyout'>     ^^^^^^^^^</span>
+<span class='pyout'>SyntaxError: did you forget parentheses around the comprehension target?</span>
+<span class='pyprm'>>>></span> [(len(x), x) for x in sorted(pals, key=len, reverse=True)]
+<span class='pyout'>[(7, 'deified'), (7, 'halalah'), (7, 'reifier'), (7, 'repaper'), (7, 'reviver'), (7, 'rotator'), (7, 'sememes'), (6, 'denned'), (6, 'hallah'), (6, 'marram'), (6, 'pullup'), (6, 'redder'), (6, 'selles'), (6, 'terret'), (5, 'alula'), (5, 'civic'), (5, 'deked'), (5, 'deled'), (5, 'dewed'), (5, 'kaiak'), (5, 'kayak'), (5, 'level'), (5, 'madam'), (5, 'minim'), (5, 'radar'), (5, 'refer'), (5, 'rotor'), (5, 'sagas'), (5, 'semes'), (5, 'seres'), (5, 'sexes'), (5, 'shahs'), (5, 'solos'), (5, 'stats'), (5, 'stets'), (5, 'sulus'), (5, 'tenet'), (5, 'torot'), (4, 'abba'), (4, 'anna'), (4, 'boob'), (4, 'deed'), (4, 'keek'), (4, 'kook'), (4, 'naan'), (4, 'noon'), (4, 'otto'), (4, 'peep'), (4, 'poop'), (4, 'sees'), (4, 'toot'), (3, 'aba'), (3, 'aga'), (3, 'aha'), (3, 'ala'), (3, 'ama'), (3, 'ana'), (3, 'ava'), (3, 'awa'), (3, 'bib'), (3, 'bob'), (3, 'bub'), (3, 'dad'), (3, 'did'), (3, 'dud'), (3, 'eke'), (3, 'eme'), (3, 'ere'), (3, 'eve'), (3, 'ewe'), (3, 'eye'), (3, 'gag'), (3, 'gig'), (3, 'hah'), (3, 'heh'), (3, 'huh'), (3, 'mem'), (3, 'mim'), (3, 'mom'), (3, 'mum'), (3, 'nan'), (3, 'nun'), (3, 'oho'), (3, 'oxo'), (3, 'pap'), (3, 'pep'), (3, 'pip'), (3, 'pop'), (3, 'pup'), (3, 'sis'), (3, 'sos'), (3, 'tat'), (3, 'tet'), (3, 'tit'), (3, 'tot'), (3, 'tut'), (3, 'ulu'), (3, 'vav'), (3, 'waw'), (3, 'wow'), (3, 'yay'), (2, 'aa'), (2, 'mm')]</span>
+<span class='pyprm'>>>></span> novowel = [x for x in words if <span class='pystr'>'a'</span> not in x and <span class='pystr'>'e'</span> not in x and <span class='pystr'>'i'</span> not in x and ]
+<span class='pyout'>KeyboardInterrupt</span>
+<span class='pyprm'>>>></span> def novowel(word):
+<span class='pyprm'>...</span>     vcount = sum([1 for x in word if x in <span class='pystr'>'aeiouy'</span>])
+<span class='pyprm'>...</span>     return vcount
+<span class='pyprm'>...</span>
+<span class='pyprm'>>>></span> novowel(<span class='pystr'>'hello'</span>)
+<span class='pyout'>2</span>
+<span class='pyprm'>>>></span> novowel(<span class='pystr'>'lalalalalalay'</span>)
+<span class='pyout'>7</span>
+<span class='pyprm'>>>></span> def novowel(word):
+<span class='pyprm'>...</span>     vcount = sum([1 for x in word if x in <span class='pystr'>'aeiouy'</span>])
+<span class='pyprm'>...</span>     return vcount == 0
+<span class='pyprm'>...</span>
+<span class='pyprm'>>>></span> novowel(<span class='pystr'>'lalalalalalay'</span>)
+<span class='pyout'>False</span>
+<span class='pyprm'>>>></span> novowel(<span class='pystr'>'shhhhhh'</span>)
+<span class='pyout'>True</span>
+<span class='pyprm'>>>></span> nov_words = [x for x in words if novowel(x)]
+<span class='pyprm'>>>></span> nov_words[:10]
+<span class='pyout'>['brr', 'brrr', 'crwth', 'crwths', 'cwm', 'cwms', 'hm', 'hmm', 'mm', 'nth']</span>
+<span class='pyprm'>>>></span> len(nov_words)
+<span class='pyout'>20</span>
+<span class='pyprm'>>>></span> nov_words
+<span class='pyout'>['brr', 'brrr', 'crwth', 'crwths', 'cwm', 'cwms', 'hm', 'hmm', 'mm', 'nth', 'pfft', 'phpht', 'pht', 'psst', 'sh', 'shh', 'tsk', 'tsks', 'tsktsk', 'tsktsks']</span>
+<span class='pyprm'>>>></span> def novowel(word):
+<span class='pyprm'>...</span>     return <span class='pystr'>'a'</span> not in word and <span class='pystr'>'e'</span> not in word and <span class='pystr'>'i'</span> not in word and <span class='pystr'>'o'</span> not in word and <span class='pystr'>'u'</span> not in word
+<span class='pyprm'>...</span>
+<span class='pyprm'>>>></span> nov_words_y_ok = [x for x in words if novowel(x)]
+<span class='pyprm'>>>></span> len(nov_words_y_ok)
+<span class='pyout'>121</span>
+<span class='pyprm'>>>></span> nov_words_y_ok
+<span class='pyout'>['brr', 'brrr', 'by', 'byrl', 'byrls', 'bys', 'crwth', 'crwths', 'cry', 'crypt', 'crypts', 'cwm', 'cwms', 'cyst', 'cysts', 'dry', 'dryly', 'drys', 'fly', 'flyby', 'flybys', 'flysch', 'fry', 'ghyll', 'ghylls', 'glycyl', 'glycyls', 'glyph', 'glyphs', 'gym', 'gyms', 'gyp', 'gyps', 'gypsy', 'hm', 'hmm', 'hymn', 'hymns', 'hyp', 'hyps', 'lymph', 'lymphs', 'lynch', 'lynx', 'mm', 'my', 'myrrh', 'myrrhs', 'myth', 'myths', 'mythy', 'nth', 'nymph', 'nymphs', 'pfft', 'phpht', 'pht', 'ply', 'pry', 'psst', 'psych', 'psychs', 'pygmy', 'pyx', 'rhythm', 'rhythms', 'rynd', 'rynds', 'scry', 'sh', 'shh', 'shy', 'shyly', 'sky', 'sly', 'slyly', 'spry', 'spryly', 'spy', 'sty', 'stymy', 'sylph', 'sylphs', 'sylphy', 'syn', 'sync', 'synch', 'synchs', 'syncs', 'synth', 'synths', 'syph', 'syphs', 'syzygy', 'thy', 'thymy', 'try', 'tryst', 'trysts', 'tsk', 'tsks', 'tsktsk', 'tsktsks', 'typp', 'typps', 'typy', 'why', 'whys', 'wry', 'wryly', 'wych', 'wyn', 'wynd', 'wynds', 'wynn', 'wynns', 'wyns', 'xylyl', 'xylyls', 'xyst','xysts']</span>
+<span class='pyprm'>>>></span> [x for x in nov_words_y_ok if x not in nov_words]
+<span class='pyout'>['by', 'byrl', 'byrls', 'bys', 'cry', 'crypt', 'crypts', 'cyst', 'cysts', 'dry', 'dryly', 'drys', 'fly', 'flyby', 'flybys', 'flysch', 'fry', 'ghyll', 'ghylls', 'glycyl', 'glycyls', 'glyph', 'glyphs', 'gym', 'gyms', 'gyp', 'gyps', 'gypsy', 'hymn', 'hymns', 'hyp', 'hyps', 'lymph', 'lymphs', 'lynch', 'lynx', 'my', 'myrrh', 'myrrhs', 'myth', 'myths', 'mythy', 'nymph', 'nymphs', 'ply', 'pry', 'psych', 'psychs', 'pygmy', 'pyx', 'rhythm', 'rhythms', 'rynd', 'rynds', 'scry', 'shy', 'shyly', 'sky', 'sly', 'slyly', 'spry', 'spryly', 'spy', 'sty', 'stymy', 'sylph', 'sylphs', 'sylphy', 'syn', 'sync', 'synch', 'synchs', 'syncs', 'synth', 'synths', 'syph', 'syphs', 'syzygy', 'thy', 'thymy', 'try', 'tryst', 'trysts', 'typp', 'typps', 'typy', 'why', 'whys', 'wry', 'wryly', 'wych', 'wyn', 'wynd', 'wynds', 'wynn', 'wynns', 'wyns', 'xylyl', 'xylyls', 'xyst', 'xysts']</span>
+<span class='pyprm'>>>></span> set(nov_words_y_ok) - set(nov_words)
+<span class='pyout'>{'wyns', 'gyms', 'myrrhs', 'gyps', 'tryst', 'glyphs', 'ghyll', 'cyst', 'dry', 'myths', 'psychs', 'hymn', 'sylphy', 'shyly', 'typy', 'trysts', 'flysch', 'glyph', 'sylphs', 'byrls', 'cysts', 'hymns', 'my', 'wych', 'synth', 'rhythms', 'syphs', 'wryly', 'gypsy', 'lynx', 'wry', 'fry', 'rynd', 'sync', 'ghylls', 'synchs', 'lynch', 'drys', 'wynd', 'gym', 'lymph', 'synths', 'dryly', 'hyp', 'thy', 'rynds', 'slyly', 'ply', 'scry', 'wynn', 'hyps', 'cry', 'mythy', 'why', 'myth', 'typps', 'whys', 'pygmy', 'xyst', 'pyx', 'syzygy', 'shy', 'wynns', 'synch', 'myrrh', 'by', 'thymy', 'xysts', 'syncs', 'fly', 'psych', 'glycyl', 'sty', 'xylyls', 'glycyls', 'try', 'sylph', 'wynds', 'crypt', 'nymphs', 'wyn', 'sly', 'sky', 'spry', 'stymy', 'crypts', 'rhythm', 'syn', 'lymphs', 'spryly', 'nymph', 'spy', 'syph', 'gyp', 'flyby', 'typp', 'xylyl', 'flybys', 'byrl', 'pry', 'bys'}</span>
+<span class='pyprm'>>>></span> words[:20]
+<span class='pyout'>['aa', 'aah', 'aahed', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark', 'aardvarks', 'aardwolf', 'aardwolves','aargh', 'aarrgh', 'aarrghh', 'aas', 'aasvogel', 'aasvogels', 'ab']</span>
+<span class='pyprm'>>>></span> wordle_words = [x for x in enable if len(x)==5]     <span class='pycom'># oops, wrong object</span>
+<span class='pyprm'>>>></span> len(wordle_words)
+<span class='pyout'>0</span>
+<span class='pyprm'>>>></span> wordle_words = [x for x in words if len(x)==5]
+<span class='pyprm'>>>></span> len(wordle_words)
+<span class='pyout'>8636</span>
+<span class='pyprm'>>>></span> wordle_words[:50]
+<span class='pyout'>['aahed', 'aalii', 'aargh', 'abaca', 'abaci', 'aback', 'abaft', 'abaka', 'abamp', 'abase', 'abash', 'abate', 'abbas', 'abbes', 'abbey', 'abbot', 'abeam', 'abele', 'abets', 'abhor', 'abide', 'abler', 'ables', 'abmho', 'abode', 'abohm', 'aboil', 'aboma', 'aboon', 'abort', 'about', 'above', 'abris', 'abuse', 'abuts', 'abuzz', 'abyes', 'abysm', 'abyss', 'acari', 'acerb', 'aceta', 'ached', 'aches', 'achoo', 'acids', 'acidy', 'acing', 'acini', 'ackee']</span>
+<span class='pyprm'>>>></span> wordle_words[-50:]
+<span class='pyout'>['zamia', 'zanza', 'zappy', 'zarfs', 'zaxes', 'zayin', 'zazen', 'zeals', 'zebec', 'zebra', 'zebus', 'zeins', 'zerks', 'zeros', 'zests', 'zesty', 'zetas', 'zibet', 'zilch', 'zills', 'zincs', 'zincy', 'zineb', 'zings', 'zingy', 'zinky', 'zippy', 'ziram', 'zitis', 'zizit', 'zlote', 'zloty', 'zoeae', 'zoeal', 'zoeas', 'zombi', 'zonal', 'zoned', 'zoner', 'zones', 'zonks', 'zooid', 'zooks', 'zooms', 'zoons', 'zooty', 'zoril', 'zoris', 'zowie', 'zymes']</span>
+<span class='pyprm'>>>></span> [x for x in wo>>> [x for x in wordle_words if x[2]==<span class='pystr'>'a'</span> and <span class='pystr'>'t'</span> in x and <span class='pystr'>'e'</span> in x and <span class='pystr'>'d'</span> in x and <span class='pystr'>'p'</span> not in x and not in x and <span class='pystr'>'n'</span> not in x] and <span class='pystr'>'n'</span> not in x]
+<span class='pyout'>  File "<python-input-64>", line 1</span>
+<span class='pyout'>    [x for x in wordle_words if x[2]=='a' and 't' in x and 'e' in x and 'd' in x and 'p' not in x and 'r' not in x 'i' not inx and 'n' not in x]</span>
+<span class='pyout'>                                                                                                                   ^^^</span>
+<span class='pyout'>SyntaxError: invalid syntax</span>
+<span class='pyprm'>>>></span>> [x for x in wordle_words if x[2]==<span class='pystr'>'a'</span> and <span class='pystr'>'t'</span> in x and <span class='pystr'>'e'</span> in x and <span class='pystr'>'d'</span> in x and <span class='pystr'>'p'</span> not in x and <span class='pystr'>'r'</span> not in x and <span class='pystr'>'i'</span> not in x and <span class='pystr'>'n'</span> not in x]]
+<span class='pyout'>['dealt', 'death', 'stade', 'tsade']</span>
+<span class='pyprm'>>>></span> <span class='pystr'>'street'</span>
+<span class='pyout'>'street'</span>
+<span class='pyprm'>>>></span> <span class='pystr'>'retest'</span>
+<span class='pyout'>'retest'</span>
+<span class='pyprm'>>>></span> sorted(<span class='pystr'>'street'</span>)
+<span class='pyout'>['e', 'e', 'r', 's', 't', 't']</span>
+<span class='pyprm'>>>></span> sorted(<span class='pystr'>'retest'</span>)
+<span class='pyout'>['e', 'e', 'r', 's', 't', 't']</span>
+<span class='pyprm'>>>></span> [x for x in words if sorted(x) == sorted(<span class='pystr'>'street'</span>)]
+<span class='pyout'>['retest', 'setter', 'street', 'tester']</span>
+<span class='pyprm'>>>></span> <span class='pystr'>'cried'</span>
+<span class='pyout'>'cried'</span>
+<span class='pyprm'>>>></span> len(<span class='pystr'>'cried'</span>)
+<span class='pyout'>5</span>
+<span class='pyprm'>>>></span> set(<span class='pystr'>'cried'</span>)
+<span class='pyout'>{'e', 'r', 'c', 'd', 'i'}</span>
+<span class='pyprm'>>>></span> set(<span class='pystr'>'hello'</span>)
+<span class='pyout'>{'l', 'h', 'e', 'o'}</span>
+<span class='pyprm'>>>></span> len(<span class='pystr'>'hello'</span>)
+<span class='pyout'>5</span>
+<span class='pyprm'>>>></span> len(set(<span class='pystr'>'hello'</span>))
+<span class='pyout'>4</span>
+<span class='pyprm'>>>></span> nodup = [x for x in words if len(x) == len(set(x))]
+<span class='pyprm'>>>></span> len(nodup)
+<span class='pyout'>34816</span>
+<span class='pyprm'>>>></span> nodup[:20]
+<span class='pyout'>['ab', 'abdomen', 'abdomens', 'abduce', 'abducens', 'abducent', 'abduces', 'abducing', 'abduct', 'abducting', 'abduction', 'abductions', 'abductor', 'abductores', 'abductors', 'abducts', 'abed', 'abelmosk', 'abet', 'abets']</span>
+<span class='pyprm'>>>></span> nodup[-20:]
+<span class='pyout'>['zwieback', 'zwiebacks', 'zydeco', 'zydecos', 'zygoid', 'zygoma', 'zygomas', 'zygomatic', 'zygose', 'zygote', 'zygotes', 'zygotic', 'zymase', 'zyme', 'zymes', 'zymogen', 'zymogens', 'zymosan', 'zymotic', 'zymurgies']</span>
+<span class='pyprm'>>>></span> sorted(nodup, key=len, reverse=True)[:10]
+<span class='pyout'>['dermatoglyphics', 'uncopyrightable', 'ambidextrously', 'dermatoglyphic', 'troublemakings', 'consumptively', 'copyrightable', 'documentarily', 'endolymphatic', 'flowchartings']</span>
+<span class='pyprm'>>>></span> [(len(x), x) for x in sorted(nodup, key=len, reverse=True)[:10]]
+<span class='pyout'>[(15, 'dermatoglyphics'), (15, 'uncopyrightable'), (14, 'ambidextrously'), (14, 'dermatoglyphic'), (14, 'troublemakings'), (13, 'consumptively'), (13, 'copyrightable'), (13, 'documentarily'), (13, 'endolymphatic'), (13, 'flowchartings')]</span>
+
+
+
+
+<span class='pyprm'>>>></span> import nltk
+<span class='pyprm'>>>></span> foo = nltk.corpus.stopwords()
+<span class='pyout'>Traceback (most recent call last):</span>
+<span class='pyout'>  File "<python-input-85>", line 1, in <module></span>
+<span class='pyout'>    foo = nltk.corpus.stopwords()</span>
+<span class='pyout'>TypeError: 'LazyCorpusLoader' object is not callable</span>
+<span class='pyprm'>>>></span> from nltk.corpus import stopwords
+<span class='pyprm'>>>></span> stopwords.words()
+<span class='pyout'>['tyre', 'rreth', 'le', 'atyre', 'këta', 'megjithëse', 'kemi', 'per', 'ndonëse', 'dytë', 'pse', 'tha', 'aty', 'ndaj', 'ke', 'këtë', 'duhet', 'pa', 'perket', 'veç', 'ndonje', 'një', 'keshtu', 's', 'janë', 'jane', 'ti', 'ia', 'megjithese', 'prej', 'ishte', 'tjerë', 'ai', 'se', 'tillë', 'do', 'si', 'ja', 'tonë', 'keta', 'pastaj', 'ndersa', 'siç', 'unë', 'gjate', 'di', 'kësaj', 'cilin', 'kjo', 'dhënë', 'da', 'teper', 'ketij', 'ama', 'pasi', 'fjalë', 'kanë', 'vetem', 'za', 'd.m.th.', 'ose', 'pas', 'ndonjë', 'cila', 'ndodhur', 'dyte', 'ardhur', 'kësi', 'nga', 'vete', 'atij', 'ta', 'jenë', 'rendit', 'tane', 'keso', 'deri', 'tone', 'të', 'prandaj', 'bëjë', 'domethënë', 'dhe', 'qi', 'mirepo', 'tona', 'që', 'u', 'këtu', 'cilet', 'jene', 'tjere', 'gjë', 'së', 'gjatë', 'duhej', 't', 'dhene', 'thuhet', 'po', 'une', 'dy', 'cfare', 'ndërsa', 'sepse', 'edhe', 'cilen', 'to', 'meqenese', 'meje', 'tij', 'qene', 'jeni', 'them', 'përket', 'keto', 'ni', 'këso', 'asaj', 'ajo', 'sic', 'vetëm', 'ketyre', 'andaj', 'na', 'sa', 'kesaj', 'cili', 'këtyre', 'domethene', 'mirëpo', 'cilën', 'mos', 'madh', 'qenë', 'cilët', 'thënë', 'jemi', 'fjale', 'soje', 'neve', 'gjitha', 'kështu', 'vet', 'kur', 'ty', 'meqë', 'meqenëse', 'jush', 'ketë', 'para', צמהן', 'מי', 'מה', 'איפה', 'היכן', 'במקום שבו', 'אם', 'לאן', 'למקום שבו', 'מקום בו', 'איזה', 'מהיכן', 'איך', 'כיצד', 'באיזו מידה', 'מתי', 'בשעה ש', 'כאשר', 'כש', 'למרות', 'לפני', 'אחרי', 'מאיזו סיבה', 'הסיבה שבגללה', 'למה', 'מדוע', 'לאיזו תכלית', 'כי', 'יש', 'אין', 'אך', 'מנין', 'מאין', 'מאיפה', 'יכל', 'יכלה', 'יכלו', 'יכול', 'יכולה', 'יכולים', 'יכולות', 'יוכלו', 'יוכל', 'מסוגל', 'לא', 'רק', 'אולי', 'אין', 'לאו', 'אי', 'כלל', 'נגד', 'אם', 'עם', 'אל', 'אלה', 'אלו', 'אף', 'על', 'מעל', 'מתחת', 'מצד', 'בשביל', 'לבין', 'באמצע', 'בתוך', 'דרך', 'מבעד', 'באמצעות', 'למעלה', 'למטה', 'מחוץ', 'מן', 'לעבר', 'מכאן', 'כאן', 'הנה', 'הרי', 'פה', 'שם', 'אך', 'ברם', 'שוב', 'אבל', 'מבלי', 'בלי', 'מלבד', 'רק', 'בגלל', 'מכיוון', 'עד', 'אשר', 'ואילו', 'למרות', 'אס', 'כמו', 'כפי', 'אז', 'אחרי', 'כן', 'לכן', 'לפיכך', 'מאד', 'עז', 'מעט', 'מעטים', 'במידה', 'שוב', 'יותר', 'מדי', 'גם', 'כן', 'נו', 'אחר', 'אחרת', 'אחרים', 'אחרות', 'אשר', 'אוa', 'aadi', 'aaj', 'aap', 'aapne', 'aata', 'aati', 'aaya', 'aaye', 'ab', 'abbe', 'abbey', 'abe', 'abhi', 'able', 'about', 'above', 'accha', 'according', 'accordingly', 'acha', 'achcha', 'across', 'actually', 'after', 'afterwards', 'again', 'against', 'agar', 'ain', 'aint', "ain't", 'aisa', 'aise', 'aisi', 'alag', 'all', 'allow', 'allows', 'almost', 'alone', 'along', 'already', 'also', 'although', 'always', 'am', 'among', 'amongst', 'an', 'and', 'andar', 'another', 'any', 'anybody', 'anyhow', 'anyone', 'anything', 'anyway', 'anyways', 'anywhere', 'ap', 'apan', 'apart', 'apna', 'apnaa', 'apne', 'apni', 'appear', 'are', 'aren', 'arent', "aren't", 'around', 'arre', 'as', 'aside', 'ask', 'asking', 'at', 'aur', 'avum', 'aya', 'aye', 'baad', 'baar', 'bad', 'bahut', 'bana', 'banae', 'banai', 'banao', 'banaya', 'banaye', 'banayi', 'banda', 'bande', 'bandi', 'bane', 'bani', 'bas', 'bata', 'batao', 'bc', 'be', 'became', 'because', 'become', 'becomes', 'becoming', 'been', 'before', 'beforehand', 'behind', 'being', 'below', 'beside', 'besides', 'best', 'better', 'between', 'beyond', 'bhai', 'bheetar', 'bhi', 'bhitar', 'bht', 'bilkul', 'bohot', 'bol', 'bola', 'bole', 'boli', 'bolo', 'bolta', 'bolte', 'bolti', 'both', 'brief', 'bro', 'btw', 'but', 'by', 'came', 'can', 'cannot', 'cant', "can't", 'cause', 'causes', 'certain', 'certainly', 'chahiye', 'chaiye', 'chal', 'chalega', 'chhaiye', 'clearly', "c'mon", 'com', 'come', 'comes', 'could', 'couldn', 'couldnt', "couldn't", 'd', 'de', 'dede', 'dega', 'degi', 'dekh', 'dekha', 'dekhe', 'dekhi', 'dekho', 'denge', 'dhang', 'di', 'did', 'didn', 'didnt', "didn't", 'dijiye', 'diya', 'diyaa', 'diye', 'diyo', 'do', 'does', 'doesn', 'doesnt',"doesn't", 'doing', 'done', 'dono', 'dont', "don't", 'doosra', 'doosre', 'down', 'downwards', 'dude', 'dunga', 'dungi', 'during', 'dusra', 'dusre', 'dusri', 'dvaara', 'dvara', 'dwaara', 'dwara', 'each', 'edu', 'eg', 'eight', 'either', 'ek', 'else', 'elsewhere', 'enough', 'etc', 'even', 'ever', 'every', 'everybody', 'everyone', 'everything', 'everywhere', 'ex', 'exactly', 'example', 'except', 'far', 'few', 'fifth', 'fir', 'first', 'five', 'followed', 'following', 'follows', 'for', 'forth', 'four', 'from', 'further', 'furthermore', 'gaya', 'gaye', 'gayi', 'get', 'gets', 'getting', 'ghar', 'given', 'gives', 'go', 'goes', 'going', 'gone', 'good', 'got', 'gotten', 'greetings', 'haan', 'had', 'hadd', 'hadn', 'hadnt', "hadn't", 'hai', 'hain', 'hamara','hamare', 'hamari', 'hamne', 'han', 'happens', 'har', 'hardly', 'has', 'hasn', 'hasnt', "hasn't", 'have', 'haven', 'havent', "haven't", 'having', 'he', 'hello', 'help', 'hence', 'her', 'here', 'hereafter', 'hereby', 'herein', "here's", 'hereupon', 'hers', 'herself', "he's", 'hi', 'him', 'himself', 'his', 'hither', 'hm', 'hmm', 'ho', 'hoga', 'hoge', 'hogi', 'hona', 'honaa', 'hone', 'honge', 'hongi', 'honi', 'hopefully', 'hota', 'hotaa', 'hote', 'hoti', 'how', 'howbeit', 'however', 'hoyenge', 'hoyengi', 'hu', 'hua', 'hue', 'huh', 'hui', 'hum', 'humein', 'humne', 'hun', 'huye', 'huyi', 'i', "i'd", 'idk', 'ie', 'if', "i'll", "i'm", 'imo', 'in', 'inasmuch', 'inc', 'inhe', 'inhi', 'inho', 'inka', 'inkaa', 'inke', 'inki', 'inn', 'inner', 'inse', 'insofar', 'into', 'inward', 'is', 'ise', 'isi', 'iska', 'iskaa', 'iske', 'iski', 'isme', 'isn', 'isne', 'isnt', "isn't", 'iss', 'isse', 'issi', 'isski', 'it', "it'd", "it'll", 'itna', 'itne', 'itni', 'itno', 'its', "it's", 'itself', 'ityaadi', 'ityadi', "i've", 'ja', 'jaa', 'jab', 'jabh', 'jaha', 'jahaan', 'jahan', 'jaisa', 'jaise', 'jaisi', 'jata', 'jayega', 'jidhar', 'jin', 'jinhe', 'jinhi', 'jinho', 'jinhone', 'jinka', 'jinke', 'jinki', 'jinn', 'jis', 'jise', 'jiska', 'jiske', 'jiski',</span>
+<span class='pycom'># ... results clipped</span>
+
+<span class='pyprm'>>>></span> stopwords.words(<span class='pystr'>'english'</span>)
+<span class='pyout'>['a', 'about', 'above', 'after', 'again', 'against', 'ain', 'all', 'am', 'an', 'and', 'any', 'are', 'aren', "aren't", 'as', 'at', 'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both', 'but', 'by', 'can', 'couldn', "couldn't", 'd', 'did', 'didn', "didn't", 'do', 'does', 'doesn', "doesn't", 'doing', 'don', "don't", 'down', 'during', 'each', 'few', 'for', 'from', 'further', 'had', 'hadn', "hadn't", 'has', 'hasn', "hasn't", 'have', 'haven', "haven't", 'having', 'he', "he'd", "he'll", 'her', 'here', 'hers', 'herself', "he's", 'him', 'himself', 'his', 'how', 'i', "i'd", 'if', "i'll", "i'm", 'in', 'into', 'is','isn', "isn't", 'it', "it'd", "it'll", "it's", 'its', 'itself', "i've", 'just', 'll', 'm', 'ma', 'me', 'mightn', "mightn't", 'more', 'most', 'mustn', "mustn't", 'my', 'myself', 'needn', "needn't", 'no', 'nor', 'not', 'now', 'o', 'of', 'off', 'on', 'once', 'only', 'or', 'other', 'our', 'ours', 'ourselves', 'out', 'over', 'own', 're', 's', 'same', 'shan', "shan't", 'she', "she'd", "she'll", "she's", 'should', 'shouldn', "shouldn't", "should've", 'so', 'some', 'such', 't', 'than', 'that', "that'll", 'the', 'their', 'theirs', 'them', 'themselves', 'then', 'there', 'these', 'they', "they'd", "they'll", "they're", "they've", 'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up', 've', 'very', 'was', 'wasn', "wasn't", 'we', "we'd", "we'll", "we're", 'were', 'weren', "weren't", "we've", 'what', 'when', 'where', 'which', 'while', 'who', 'whom', 'why', 'will', 'with', 'won', "won't", 'wouldn', "wouldn't", 'y', 'you', "you'd", "you'll", 'your', "you're", 'yours', 'yourself', 'yourselves', "you've"]</span>
+<span class='pyprm'>>>></span> stopwords.words(<span class='pystr'>'spanish'</span>)
+<span class='pyout'>['de', 'la', 'que', 'el', 'en', 'y', 'a', 'los', 'del', 'se', 'las', 'por', 'un', 'para', 'con', 'no', 'una', 'su', 'al', 'lo', 'como', 'más', 'pero', 'sus', 'le', 'ya', 'o', 'este', 'sí', 'porque', 'esta', 'entre', 'cuando', 'muy', 'sin', 'sobre', 'también', 'me', 'hasta', 'hay', 'donde', 'quien', 'desde', 'todo', 'nos', 'durante', 'todos', 'uno', 'les', 'ni', 'contra', 'otros', 'ese', 'eso', 'ante', 'ellos', 'e', 'esto', 'mí', 'antes', 'algunos', 'qué', 'unos', 'yo', 'otro', 'otras', 'otra', 'él', 'tanto', 'esa', 'estos', 'mucho', 'quienes', 'nada', 'muchos', 'cual', 'poco', 'ella', 'estar', 'estas', 'algunas', 'algo', 'nosotros', 'mi', 'mis', 'tú', 'te', 'ti', 'tu', 'tus', 'ellas', 'nosotras', 'vosotros', 'vosotras', 'os', 'mío', 'mía', 'míos', 'mías', 'tuyo', 'tuya', 'tuyos', 'tuyas', 'suyo', 'suya', 'suyos', 'suyas', 'nuestro', 'nuestra', 'nuestros', 'nuestras', 'vuestro', 'vuestra', 'vuestros', 'vuestras', 'esos', 'esas', 'estoy', 'estás', 'está', 'estamos', 'estáis', 'están', 'esté', 'estés', 'estemos', 'estéis', 'estén', 'estaré', 'estarás', 'estará', 'estaremos', 'estaréis', 'estarán', 'estaría', 'estarías', 'estaríamos', 'estaríais', 'estarían', 'estaba', 'estabas', 'estábamos', 'estabais', 'estaban', 'estuve', 'estuviste', 'estuvo', 'estuvimos', 'estuvisteis', 'estuvieron', 'estuviera', 'estuvieras', 'estuviéramos', 'estuvierais', 'estuvieran', 'estuviese', 'estuvieses', 'estuviésemos', 'estuvieseis', 'estuviesen', 'estando', 'estado', 'estada', 'estados', 'estadas', 'estad','he', 'has', 'ha', 'hemos', 'habéis', 'han', 'haya', 'hayas', 'hayamos', 'hayáis', 'hayan', 'habré', 'habrás', 'habrá', 'habremos', 'habréis', 'habrán', 'habría', 'habrías', 'habríamos', 'habríais', 'habrían', 'había', 'habías', 'habíamos', 'habíais','habían', 'hube', 'hubiste', 'hubo', 'hubimos', 'hubisteis', 'hubieron', 'hubiera', 'hubieras', 'hubiéramos', 'hubierais', 'hubieran', 'hubiese', 'hubieses', 'hubiésemos', 'hubieseis', 'hubiesen', 'habiendo', 'habido', 'habida', 'habidos', 'habidas', 'soy', 'eres', 'es', 'somos', 'sois', 'son', 'sea', 'seas', 'seamos', 'seáis', 'sean', 'seré', 'serás', 'será', 'seremos', 'seréis', 'serán', 'sería', 'serías', 'seríamos', 'seríais', 'serían', 'era', 'eras', 'éramos', 'erais', 'eran', 'fui', 'fuiste','fue', 'fuimos', 'fuisteis', 'fueron', 'fuera', 'fueras', 'fuéramos', 'fuerais', 'fueran', 'fuese', 'fueses', 'fuésemos', 'fueseis', 'fuesen', 'sintiendo', 'sentido', 'sentida', 'sentidos', 'sentidas', 'siente', 'sentid', 'tengo', 'tienes', 'tiene', 'tenemos', 'tenéis', 'tienen', 'tenga', 'tengas', 'tengamos', 'tengáis', 'tengan', 'tendré', 'tendrás', 'tendrá', 'tendremos', 'tendréis', 'tendrán', 'tendría', 'tendrías', 'tendríamos', 'tendríais', 'tendrían', 'tenía', 'tenías', 'teníamos', 'teníais','tenían', 'tuve', 'tuviste', 'tuvo', 'tuvimos', 'tuvisteis', 'tuvieron', 'tuviera', 'tuvieras', 'tuviéramos', 'tuvierais', 'tuvieran', 'tuviese', 'tuvieses', 'tuviésemos', 'tuvieseis', 'tuviesen', 'teniendo', 'tenido', 'tenida', 'tenidos', 'tenidas', 'tened']</span>
+<span class='pyprm'>>>></span> <span class='pystr'>'she'</span> in stopwords.words(<span class='pystr'>'english'</span>)
+<span class='pyout'>True</span>
+<span class='pyprm'>>>></span> <span class='pystr'>'must'</span> in stopwords.words(<span class='pystr'>'english'</span>)
+<span class='pyout'>False</span>
+<span class='pyprm'>>>></span> <span class='pystr'>'would'</span> in stopwords.words(<span class='pystr'>'english'</span>)
+<span class='pyout'>False</span>
+<span class='pyprm'>>>></span> <span class='pystr'>'will'</span> in stopwords.words(<span class='pystr'>'english'</span>)
+<span class='pyout'>True</span>
+
+<span class='pyprm'>>>></span> any([True, False, False])
+<span class='pyout'>True</span>
+<span class='pyprm'>>>></span> all([True, False, False])
+<span class='pyout'>False</span>
+<span class='pyprm'>>>></span> any([])
+<span class='pyout'>False</span>
+<span class='pyprm'>>>></span> any([<span class='pystr'>'hello'</span>])
+<span class='pyout'>True</span>
+<span class='pyprm'>>>></span> [c in <span class='pystr'>'aeiouy'</span> for c in <span class='pystr'>'hello'</span>]
+<span class='pyout'>[False, True, False, False, True]</span>
+<span class='pyprm'>>>></span> any([c in <span class='pystr'>'aeiouy'</span> for c in <span class='pystr'>'hello'</span>])
+<span class='pyout'>True</span>
+<span class='pyprm'>>>></span> [c in <span class='pystr'>'aeiouy'</span> for c in <span class='pystr'>'tsktsk'</span>]
+<span class='pyout'>[False, False, False, False, False, False]</span>
+<span class='pyprm'>>>></span> any([c in <span class='pystr'>'aeiouy'</span> for c in <span class='pystr'>'tsktsk'</span>])
+<span class='pyout'>False</span>
+<span class='pyprm'>>>></span> not any([c in <span class='pystr'>'aeiouy'</span> for c in <span class='pystr'>'tsktsk'</span>])
+<span class='pyout'>True</span>
+<span class='pyprm'>>>></span> exit()
+
+<span class='pyout'>C:\Users\Jane Eyre\Desktop\Python-Study>python</span>
+Python 3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+<span class='pyprm'>>>></span> import os
+<span class='pyprm'>>>></span> os.getcwd()
+<span class='pyout'>'C:\\Users\\Jane Eyre\\Desktop\\Python-Study'</span>
+<span class='pyprm'>>>></span> os.listdir()
+<span class='pyout'>['.ipynb_checkpoints', 'enable1.txt', 'Exercise Files', 'foo.py', 'hello.py', 'meeting2.ipynb', 'Meeting3.ipynb']</span>
+<span class='pyprm'>>>></span> f = open(r<span class='pystr'>'C:\Users\Jane Eyere\Desktop\tale.txt'</span>)
+<span class='pyout'>Traceback (most recent call last):</span>
+<span class='pyout'>  File "<python-input-3>", line 1, in <module></span>
+<span class='pyout'>    f = open(r'C:\Users\Jane Eyere\Desktop\tale.txt')</span>
+<span class='pyout'>FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Jane Eyere\\Desktop\\tale.txt'</span>
+<span class='pyprm'>>>></span> f = open(r<span class='pystr'>'C:\Users\Jane Eyre\Desktop\tale.txt'</span>)
+<span class='pyprm'>>>></span> taletxt = f.read()
+<span class='pyprm'>>>></span> f.close()
+<span class='pyprm'>>>></span> taletxt[:50]
+<span class='pyout'>'It was the best of times, it was the worst of time'</span>
+<span class='pyprm'>>>></span> print(taletxt)
+<span class='pyout'>It was the best of times, it was the worst of times,</span>
+<span class='pyout'>it was the age of wisdom, it was the age of foolishness,</span>
+<span class='pyout'>it was the epoch of belief, it was the epoch of incredulity,</span>
+<span class='pyout'>it was the season of Light, it was the season of Darkness,</span>
+<span class='pyout'>it was the spring of hope, it was the winter of despair,</span>
+<span class='pyout'>we had everything before us, we had nothing before us,</span>
+<span class='pyout'>we were all going direct to heaven, we were all going direct</span>
+<span class='pyout'>the other way - in short, the period was so far like the present</span>
+<span class='pyout'>period, that some of its noisiest authorities insisted on its</span>
+<span class='pyout'>being received, for good or for evil, in the superlative degree</span>
+<span class='pyout'>of comparison only.</span>
+
+<span class='pyprm'>>>></span> f = open(r<span class='pystr'>'../tale.txt'</span>)
+<span class='pyprm'>>>></span> taletxt = f.read()
+<span class='pyprm'>>>></span> f.close()
+<span class='pyprm'>>>></span> print(taletxt)
+<span class='pyout'>It was the best of times, it was the worst of times,</span>
+<span class='pyout'>it was the age of wisdom, it was the age of foolishness,</span>
+<span class='pyout'>it was the epoch of belief, it was the epoch of incredulity,</span>
+<span class='pyout'>it was the season of Light, it was the season of Darkness,</span>
+<span class='pyout'>it was the spring of hope, it was the winter of despair,</span>
+<span class='pyout'>we had everything before us, we had nothing before us,</span>
+<span class='pyout'>we were all going direct to heaven, we were all going direct</span>
+<span class='pyout'>the other way - in short, the period was so far like the present</span>
+<span class='pyout'>period, that some of its noisiest authorities insisted on its</span>
+<span class='pyout'>being received, for good or for evil, in the superlative degree</span>
+<span class='pyout'>of comparison only.</span>
+
+<span class='pyprm'>>>></span> f = open(r<span class='pystr'>'C:\Users\Jane Eyre\Desktop\Python-Study\mycorpus\how-do-i.txt'</span>)
+<span class='pyprm'>>>></span> howtxt = f.read()
+<span class='pyprm'>>>></span> f.close()
+<span class='pyprm'>>>></span> howtxt[:200]
+<span class='pyout'>'How do I love thee? Let me count the ways.\nI love thee to the depth and breadth and height\nMy soul can reach, when feelingout of sight\nFor the ends of Being and ideal Grace.\nI love thee to the level '</span>
+<span class='pyprm'>>>></span> f = open(r<span class='pystr'>'mycorpus\how-do-i.txt'</span>)
+<span class='pyprm'>>>></span> howtxt = f.read()
+<span class='pyprm'>>>></span> f.close()
+<span class='pyprm'>>>></span> howtxt[-200:]
+<span class='pyout'>"ldhood's faith.\nI love thee with a love I seemed to lose\nWith my lost saints, I love thee with the breath,\nSmiles, tears,of all my life! and, if God choose,\nI shall but love thee better after death.\n"</span>
+<span class='pyprm'>>>></span>
+
+</pre>
+</body>
+</html>
+
