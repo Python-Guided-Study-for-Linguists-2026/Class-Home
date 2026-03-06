@@ -244,7 +244,7 @@
 
 
 ### Next meeting (after spring break)
-- Review of my [Python 3 Notes](https://sites.pitt.edu/~naraehan/python3/). With the exception of "Regular Expressions", all notes/topics should be familiar to you now! Review and patch any gaps in knowledge. 
+- Review of my [Python 3 Notes](https://sites.pitt.edu/~naraehan/python3/). With the exception of "Regular Expressions" and "pickling", all notes/topics should be familiar to you now! Review and patch any gaps in knowledge. 
 - **Homework**: Just focus on catching up and further practicing, and upload your work in the `hw_review` folder. Suggestions:
    - Revisit materials from last few meetings. Take a look at HW submissions submitted by classmates, discover different/better ways of solving a problem. 
    - Catch up! Review missed topics, practice text processing with NLTK. 
