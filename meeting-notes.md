@@ -255,6 +255,15 @@
 # Meeting 8 (Mar 19)
 
 ### Review points
+- Your review notes
+    - What has everyone been up to? 
 - Go over Na-Rae's [Python 3 Notes](https://sites.pitt.edu/~naraehan/python3/)
-    - New topic: regular expressions https://sites.pitt.edu/~naraehan/python3/re.html
-	
+    - New topic: **regular expressions** and Python's `re` library https://sites.pitt.edu/~naraehan/python3/re.html
+
+### Next meeting
+- [Corpus Linguistics Workshop](https://github.com/naraehan/NASSLLI2018-Corpus-Linguistics/?tab=readme-ov-file) Day 1, 2
+- **Homework**: Follow the contents of Day 1 and Day 2 notebooks in your own Jupyter Notebook file. You can combine the two into a single JNB. Upload your JNB in the `hw_corpus_day12` folder. 
+    - You should be familiar with most of the concepts by now! 
+    - There are some new, important data objects such as `nltk.FreqDist()`: pay special attention. 
+    - IMPORTANT: Don't just copy over the commands and nod along! That doesn't help you learn. Make sure to _explore_ by altering them and trying your own thing. 
+    

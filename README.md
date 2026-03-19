@@ -69,7 +69,7 @@
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 8 (Mar 19)</td>
             <td style="width: 51.8281%; height: 28.8444px;">Review &amp; Practice: Python 3 Notes</td>
-            <td style="width: 20.7733%; height: 28.8444px;"></td>
+            <td style="width: 20.7733%; height: 28.8444px;"><a href="meeting-notes.md#meeting-8-mar-19">notes</a></td>
         </tr>
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 9 (Mar 26)</td>
