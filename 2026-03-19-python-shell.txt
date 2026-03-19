@@ -1,0 +1,144 @@
+C:\Users\Jane Eyre>python
+Python 3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> range(15)
+range(0, 15)
+>>> for i in range(15):
+...     print(i)
+...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+>>> range(15)
+range(0, 15)
+>>> list(range(15))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+>>> fooset = {1,2,3,3,4,4,4,4,10}
+>>> fooset
+{1, 2, 3, 4, 10}
+>>> fooset = {('a', 'b'), ('a', 'b'), ('b', 'c')}
+>>> fooset
+{('a', 'b'), ('b', 'c')}
+>>> myList = ["a", "b", "b", "c", "a"]
+>>> set(myList)
+{'b', 'a', 'c'}
+>>> list(set(myList))
+['b', 'a', 'c']
+>>> set(myList)
+{'b', 'a', 'c'}
+>>> set(myList)
+{'b', 'a', 'c'}
+>>> mydict = {'a':'apple', 'b':'banana', 'c':'carrot'}
+>>> mydict
+{'a': 'apple', 'b': 'banana', 'c': 'carrot'}
+>>> mydict = {'b':'banana', 'c':'carrot', 'a':'apple'}
+>>> mydict
+{'b': 'banana', 'c': 'carrot', 'a': 'apple'}
+>>> mydict['d'] = 'dinosaur'
+>>> mydict
+{'b': 'banana', 'c': 'carrot', 'a': 'apple', 'd': 'dinosaur'}
+>>> mydict
+{'b': 'banana', 'c': 'carrot', 'a': 'apple', 'd': 'dinosaur'}
+>>> for x in mydict:
+...     print(x)
+...
+b
+c
+a
+d
+>>> for x in mydict.items():
+...     print(x)
+...
+('b', 'banana')
+('c', 'carrot')
+('a', 'apple')
+('d', 'dinosaur')
+>>> for (k,v) in mydict.items():
+...     print(k,v)
+...
+b banana
+c carrot
+a apple
+d dinosaur
+>>> for (k,v) in mydict.items():
+...     print(k,'is for', v)
+...
+b is for banana
+c is for carrot
+a is for apple
+d is for dinosaur
+>>> for x in mydict.values():
+...     print(x)
+...
+banana
+carrot
+apple
+dinosaur
+>>> exit()
+
+
+# regular expressions
+
+C:\Users\Jane Eyre\Desktop\Python-Study>python
+Python 3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import re
+>>> words = open('enable1.txt').read().split()
+>>> len(words)
+172820
+>>> words[:10]
+['aa', 'aah', 'aahed', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark']
+>>>
+>>> words[:20]
+['aa', 'aah', 'aahed', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark', 'aardvarks', 'aardwolf', 'aardwolves','aargh', 'aarrgh', 'aarrghh', 'aas', 'aasvogel', 'aasvogels', 'ab']
+>>> words[:40]
+['aa', 'aah', 'aahed', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark', 'aardvarks', 'aardwolf', 'aardwolves','aargh', 'aarrgh', 'aarrghh', 'aas', 'aasvogel', 'aasvogels', 'ab', 'aba', 'abaca', 'abacas', 'abaci', 'aback', 'abacterial','abacus', 'abacuses', 'abaft', 'abaka', 'abakas', 'abalone', 'abalones', 'abamp', 'abampere', 'abamperes', 'abamps', 'abandon', 'abandoned', 'abandoner']
+
+>>> [w for w in words[:40] if 'e' not in w]
+['aa', 'aah', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark', 'aardvarks', 'aardwolf', 'aargh', 'aarrgh', 'aarrghh', 'aas', 'ab', 'aba', 'abaca', 'abacas', 'abaci', 'aback', 'abacus', 'abaft', 'abaka', 'abakas', 'abamp', 'abamps', 'abandon']
+>>> [w for w in words[:40] if not re.search(r'e', w)] # same, but with regular expression search
+['aa', 'aah', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark', 'aardvarks', 'aardwolf', 'aargh', 'aarrgh', 'aarrghh', 'aas', 'ab', 'aba', 'abaca', 'abacas', 'abaci', 'aback', 'abacus', 'abaft', 'abaka', 'abakas', 'abamp', 'abamps', 'abandon']
+
+>>> [w for w in words if not re.search(r'[aeiouy]', w)]    # "no vowel" words. [] means any
+['brr', 'brrr', 'crwth', 'crwths', 'cwm', 'cwms', 'hm', 'hmm', 'mm', 'nth', 'pfft', 'phpht', 'pht', 'psst', 'sh', 'shh', 'tsk', 'tsks', 'tsktsk', 'tsktsks']
+
+>>> [w for w in words if re.search(r'q[^u]', w)]    # words with q followed by a non-u character
+['buqsha', 'buqshas', 'faqir', 'faqirs', 'qaid', 'qaids', 'qanat', 'qanats', 'qat', 'qats', 'qindar', 'qindarka', 'qindars', 'qintar', 'qintars', 'qiviut', 'qiviuts', 'qoph', 'qophs', 'qwerty', 'qwertys', 'sheqalim', 'sheqel', 'suqs', 'tranqs', 'umiaqs']
+
+>>> [w for w in words if re.search(r'q[^u]\w+', w)]    # 'umiaqs' is excluded
+['buqsha', 'buqshas', 'faqir', 'faqirs', 'qaid', 'qaids', 'qanat', 'qanats', 'qat', 'qats', 'qindar', 'qindarka', 'qindars', 'qintar', 'qintars', 'qiviut', 'qiviuts', 'qoph', 'qophs', 'qwerty', 'qwertys', 'sheqalim', 'sheqel']
+
+>>> [w for w in words if re.search(r'q[^u]\w*', w)]    # * means 0 or more: 'umiaqs' is included
+['buqsha', 'buqshas', 'faqir', 'faqirs', 'qaid', 'qaids', 'qanat', 'qanats', 'qat', 'qats', 'qindar', 'qindarka', 'qindars', 'qintar', 'qintars', 'qiviut', 'qiviuts', 'qoph', 'qophs', 'qwerty', 'qwertys', 'sheqalim', 'sheqel', 'suqs', 'tranqs', 'umiaqs']
+
+>>> footxt = """It was the best of times, it was the worst of times,
+... it was the age of wisdom, it was the age of foolishness,
+... it was the epoch of belief, it was the epoch of incredulity,
+... it was the season of Light, it was the season of Darkness,
+... it was the spring of hope, it was the winter of despair,
+... we had everything before us, we had nothing before us,
+... we were all going direct to heaven, we were all going direct
+... the other way - in short, the period was so far like the present
+... period, that some of its noisiest authorities insisted on its
+... being received, for good or for evil, in the superlative degree
+... of comparison only."""
+>>> footxt
+'It was the best of times, it was the worst of times,\nit was the age of wisdom, it was the age of foolishness,\nit was the epoch of belief, it was the epoch of incredulity,\nit was the season of Light, it was the season of Darkness,\nit was the spring of hope, it was the winter of despair,\nwe had everything before us, we had nothing before us,\nwe were all going direct to heaven, we were all going direct\nthe other way - in short, the period was so far like the present\nperiod, that some of its noisiest authorities insisted on its\nbeing received, for good or for evil, in the superlative degree\nof comparison only.'
+
+>>> re.findall(r'\w+', footxt)    # find all "words": stretches of 1 or more alphanumeric chars (\w)
+['It', 'was', 'the', 'best', 'of', 'times', 'it', 'was', 'the', 'worst', 'of', 'times', 'it', 'was', 'the', 'age', 'of', 'wisdom', 'it', 'was', 'the', 'age', 'of', 'foolishness', 'it', 'was', 'the', 'epoch', 'of', 'belief', 'it', 'was', 'the', 'epoch', 'of', 'incredulity', 'it', 'was', 'the', 'season', 'of', 'Light', 'it', 'was', 'the', 'season', 'of', 'Darkness', 'it', 'was', 'the', 'spring', 'of', 'hope', 'it', 'was', 'the', 'winter', 'of', 'despair', 'we', 'had', 'everything', 'before', 'us', 'we', 'had', 'nothing', 'before', 'us', 'we', 'were', 'all', 'going', 'direct', 'to', 'heaven', 'we', 'were', 'all', 'going', 'direct', 'the', 'other', 'way', 'in', 'short', 'the', 'period', 'was', 'so', 'far', 'like', 'the', 'present', 'period', 'that','some', 'of', 'its', 'noisiest', 'authorities', 'insisted', 'on', 'its', 'being', 'received', 'for', 'good', 'or', 'for', 'evil', 'in', 'the', 'superlative', 'degree', 'of', 'comparison', 'only']
+>>>
+
+
