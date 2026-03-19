@@ -1,0 +1,165 @@
+<html>
+<head>
+<style>
+/* body{ font-family: serif;} */  /* because of pre-tag, font family isn't needed */
+span {white-space: pre-wrap}  /* enables line wrap, no space collapsing */
+span.pycom { color: red;}
+span.pyout { color: mediumblue;}
+span.pyerr { color: red;}
+span.pyprm { color: deeppink;}
+span.pystr { color: limegreen;}  /* jade green is #00A36C */
+</style>
+</head>
+<body>
+<pre>
+
+<span class='pyout'>C:\Users\Jane Eyre&gt;python</span>
+Python 3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+<span class='pyprm'>>>></span> range(15)
+<span class='pyout'>range(0, 15)</span>
+<span class='pyprm'>>>></span> for i in range(15):
+<span class='pyprm'>...</span>     print(i)
+<span class='pyprm'>...</span>
+<span class='pyout'>0</span>
+<span class='pyout'>1</span>
+<span class='pyout'>2</span>
+<span class='pyout'>3</span>
+<span class='pyout'>4</span>
+<span class='pyout'>5</span>
+<span class='pyout'>6</span>
+<span class='pyout'>7</span>
+<span class='pyout'>8</span>
+<span class='pyout'>9</span>
+<span class='pyout'>10</span>
+<span class='pyout'>11</span>
+<span class='pyout'>12</span>
+<span class='pyout'>13</span>
+<span class='pyout'>14</span>
+<span class='pyprm'>>>></span> range(15)
+<span class='pyout'>range(0, 15)</span>
+<span class='pyprm'>>>></span> list(range(15))
+<span class='pyout'>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]</span>
+<span class='pyprm'>>>></span> fooset = {1,2,3,3,4,4,4,4,10}
+<span class='pyprm'>>>></span> fooset
+<span class='pyout'>{1, 2, 3, 4, 10}</span>
+<span class='pyprm'>>>></span> fooset = {(<span class='pystr'>'a'</span>, <span class='pystr'>'b'</span>), (<span class='pystr'>'a'</span>, <span class='pystr'>'b'</span>), (<span class='pystr'>'b'</span>, <span class='pystr'>'c'</span>)}
+<span class='pyprm'>>>></span> fooset
+<span class='pyout'>{('a', 'b'), ('b', 'c')}</span>
+<span class='pyprm'>>>></span> myList = [<span class='pystr'>"a"</span>, <span class='pystr'>"b"</span>, <span class='pystr'>"b"</span>, <span class='pystr'>"c"</span>, <span class='pystr'>"a"</span>]
+<span class='pyprm'>>>></span> set(myList)
+<span class='pyout'>{'b', 'a', 'c'}</span>
+<span class='pyprm'>>>></span> list(set(myList))
+<span class='pyout'>['b', 'a', 'c']</span>
+<span class='pyprm'>>>></span> set(myList)
+<span class='pyout'>{'b', 'a', 'c'}</span>
+<span class='pyprm'>>>></span> set(myList)
+<span class='pyout'>{'b', 'a', 'c'}</span>
+<span class='pyprm'>>>></span> mydict = {<span class='pystr'>'a'</span>:<span class='pystr'>'apple'</span>, <span class='pystr'>'b'</span>:<span class='pystr'>'banana'</span>, <span class='pystr'>'c'</span>:<span class='pystr'>'carrot'</span>}
+<span class='pyprm'>>>></span> mydict
+<span class='pyout'>{'a': 'apple', 'b': 'banana', 'c': 'carrot'}</span>
+<span class='pyprm'>>>></span> mydict = {<span class='pystr'>'b'</span>:<span class='pystr'>'banana'</span>, <span class='pystr'>'c'</span>:<span class='pystr'>'carrot'</span>, <span class='pystr'>'a'</span>:<span class='pystr'>'apple'</span>}
+<span class='pyprm'>>>></span> mydict
+<span class='pyout'>{'b': 'banana', 'c': 'carrot', 'a': 'apple'}</span>
+<span class='pyprm'>>>></span> mydict[<span class='pystr'>'d'</span>] = <span class='pystr'>'dinosaur'</span>
+<span class='pyprm'>>>></span> mydict
+<span class='pyout'>{'b': 'banana', 'c': 'carrot', 'a': 'apple', 'd': 'dinosaur'}</span>
+<span class='pyprm'>>>></span> mydict
+<span class='pyout'>{'b': 'banana', 'c': 'carrot', 'a': 'apple', 'd': 'dinosaur'}</span>
+<span class='pyprm'>>>></span> for x in mydict:
+<span class='pyprm'>...</span>     print(x)
+<span class='pyprm'>...</span>
+<span class='pyout'>b</span>
+<span class='pyout'>c</span>
+<span class='pyout'>a</span>
+<span class='pyout'>d</span>
+<span class='pyprm'>>>></span> for x in mydict.items():
+<span class='pyprm'>...</span>     print(x)
+<span class='pyprm'>...</span>
+<span class='pyout'>('b', 'banana')</span>
+<span class='pyout'>('c', 'carrot')</span>
+<span class='pyout'>('a', 'apple')</span>
+<span class='pyout'>('d', 'dinosaur')</span>
+<span class='pyprm'>>>></span> for (k,v) in mydict.items():
+<span class='pyprm'>...</span>     print(k,v)
+<span class='pyprm'>...</span>
+<span class='pyout'>b banana</span>
+<span class='pyout'>c carrot</span>
+<span class='pyout'>a apple</span>
+<span class='pyout'>d dinosaur</span>
+<span class='pyprm'>>>></span> for (k,v) in mydict.items():
+<span class='pyprm'>...</span>     print(k,<span class='pystr'>'is for'</span>, v)
+<span class='pyprm'>...</span>
+<span class='pyout'>b is for banana</span>
+<span class='pyout'>c is for carrot</span>
+<span class='pyout'>a is for apple</span>
+<span class='pyout'>d is for dinosaur</span>
+<span class='pyprm'>>>></span> for x in mydict.values():
+<span class='pyprm'>...</span>     print(x)
+<span class='pyprm'>...</span>
+<span class='pyout'>banana</span>
+<span class='pyout'>carrot</span>
+<span class='pyout'>apple</span>
+<span class='pyout'>dinosaur</span>
+<span class='pyprm'>>>></span> exit()
+
+
+<span class='pycom'># regular expressions</span>
+
+<span class='pyout'>C:\Users\Jane Eyre\Desktop\Python-Study&gt;python</span>
+Python 3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+<span class='pyprm'>>>></span> import re
+<span class='pyprm'>>>></span> words = open(<span class='pystr'>'enable1.txt'</span>).read().split()
+<span class='pyprm'>>>></span> len(words)
+<span class='pyout'>172820</span>
+<span class='pyprm'>>>></span> words[:10]
+<span class='pyout'>['aa', 'aah', 'aahed', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark']</span>
+<span class='pyprm'>>>></span>
+<span class='pyprm'>>>></span> words[:20]
+<span class='pyout'>['aa', 'aah', 'aahed', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark', 'aardvarks', 'aardwolf', 'aardwolves','aargh', 'aarrgh', 'aarrghh', 'aas', 'aasvogel', 'aasvogels', 'ab']</span>
+<span class='pyprm'>>>></span> words[:40]
+<span class='pyout'>['aa', 'aah', 'aahed', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark', 'aardvarks', 'aardwolf', 'aardwolves','aargh', 'aarrgh', 'aarrghh', 'aas', 'aasvogel', 'aasvogels', 'ab', 'aba', 'abaca', 'abacas', 'abaci', 'aback', 'abacterial','abacus', 'abacuses', 'abaft', 'abaka', 'abakas', 'abalone', 'abalones', 'abamp', 'abampere', 'abamperes', 'abamps', 'abandon', 'abandoned', 'abandoner']</span>
+
+<span class='pyprm'>>>></span> [w for w in words[:40] if <span class='pystr'>'e'</span> not in w]
+<span class='pyout'>['aa', 'aah', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark', 'aardvarks', 'aardwolf', 'aargh', 'aarrgh', 'aarrghh', 'aas', 'ab', 'aba', 'abaca', 'abacas', 'abaci', 'aback', 'abacus', 'abaft', 'abaka', 'abakas', 'abamp', 'abamps', 'abandon']</span>
+<span class='pyprm'>>>></span> [w for w in words[:40] if not re.search(r<span class='pystr'>'e'</span>, w)] <span class='pycom'># same, but with regular expression search</span>
+<span class='pyout'>['aa', 'aah', 'aahing', 'aahs', 'aal', 'aalii', 'aaliis', 'aals', 'aardvark', 'aardvarks', 'aardwolf', 'aargh', 'aarrgh', 'aarrghh', 'aas', 'ab', 'aba', 'abaca', 'abacas', 'abaci', 'aback', 'abacus', 'abaft', 'abaka', 'abakas', 'abamp', 'abamps', 'abandon']</span>
+
+<span class='pyprm'>>>></span> [w for w in words if not re.search(r<span class='pystr'>'[aeiouy]'</span>, w)]    <span class='pycom'># "no vowel" words. [] means any</span>
+<span class='pyout'>['brr', 'brrr', 'crwth', 'crwths', 'cwm', 'cwms', 'hm', 'hmm', 'mm', 'nth', 'pfft', 'phpht', 'pht', 'psst', 'sh', 'shh', 'tsk', 'tsks', 'tsktsk', 'tsktsks']</span>
+
+<span class='pyprm'>>>></span> [w for w in words if re.search(r<span class='pystr'>'q[^u]'</span>, w)]    <span class='pycom'># words with q followed by a non-u character</span>
+<span class='pyout'>['buqsha', 'buqshas', 'faqir', 'faqirs', 'qaid', 'qaids', 'qanat', 'qanats', 'qat', 'qats', 'qindar', 'qindarka', 'qindars', 'qintar', 'qintars', 'qiviut', 'qiviuts', 'qoph', 'qophs', 'qwerty', 'qwertys', 'sheqalim', 'sheqel', 'suqs', 'tranqs', 'umiaqs']</span>
+
+<span class='pyprm'>>>></span> [w for w in words if re.search(r<span class='pystr'>'q[^u]\w+'</span>, w)]    <span class='pycom'># 'umiaqs' is excluded</span>
+<span class='pyout'>['buqsha', 'buqshas', 'faqir', 'faqirs', 'qaid', 'qaids', 'qanat', 'qanats', 'qat', 'qats', 'qindar', 'qindarka', 'qindars', 'qintar', 'qintars', 'qiviut', 'qiviuts', 'qoph', 'qophs', 'qwerty', 'qwertys', 'sheqalim', 'sheqel']</span>
+
+<span class='pyprm'>>>></span> [w for w in words if re.search(r<span class='pystr'>'q[^u]\w*'</span>, w)]    <span class='pycom'># * means 0 or more: 'umiaqs' is included</span>
+<span class='pyout'>['buqsha', 'buqshas', 'faqir', 'faqirs', 'qaid', 'qaids', 'qanat', 'qanats', 'qat', 'qats', 'qindar', 'qindarka', 'qindars', 'qintar', 'qintars', 'qiviut', 'qiviuts', 'qoph', 'qophs', 'qwerty', 'qwertys', 'sheqalim', 'sheqel', 'suqs', 'tranqs', 'umiaqs']</span>
+
+>>> footxt = <span class='pystr'>"""It was the best of times, it was the worst of times,
+<span class='pyprm'>...</span> it was the age of wisdom, it was the age of foolishness,
+<span class='pyprm'>...</span> it was the epoch of belief, it was the epoch of incredulity,
+<span class='pyprm'>...</span> it was the season of Light, it was the season of Darkness,
+<span class='pyprm'>...</span> it was the spring of hope, it was the winter of despair,
+<span class='pyprm'>...</span> we had everything before us, we had nothing before us,
+<span class='pyprm'>...</span> we were all going direct to heaven, we were all going direct
+<span class='pyprm'>...</span> the other way - in short, the period was so far like the present
+<span class='pyprm'>...</span> period, that some of its noisiest authorities insisted on its
+<span class='pyprm'>...</span> being received, for good or for evil, in the superlative degree
+... of comparison only."""</span>
+
+<span class='pyprm'>>>></span> footxt
+<span class='pyout'>'It was the best of times, it was the worst of times,\nit was the age of wisdom, it was the age of foolishness,\nit was the epoch of belief, it was the epoch of incredulity,\nit was the season of Light, it was the season of Darkness,\nit was the spring of hope, it was the winter of despair,\nwe had everything before us, we had nothing before us,\nwe were all going direct to heaven, we were all going direct\nthe other way - in short, the period was so far like the present\nperiod, that some of its noisiest authorities insisted on its\nbeing received, for good or for evil, in the superlative degree\nof comparison only.'</span>
+
+<span class='pyprm'>>>></span> re.findall(r<span class='pystr'>'\w+'</span>, footxt)    <span class='pycom'># find all "words": stretches of 1 or more alphanumeric chars (\w)</span>
+<span class='pyout'>['It', 'was', 'the', 'best', 'of', 'times', 'it', 'was', 'the', 'worst', 'of', 'times', 'it', 'was', 'the', 'age', 'of', 'wisdom', 'it', 'was', 'the', 'age', 'of', 'foolishness', 'it', 'was', 'the', 'epoch', 'of', 'belief', 'it', 'was', 'the', 'epoch', 'of', 'incredulity', 'it', 'was', 'the', 'season', 'of', 'Light', 'it', 'was', 'the', 'season', 'of', 'Darkness', 'it', 'was', 'the', 'spring', 'of', 'hope', 'it', 'was', 'the', 'winter', 'of', 'despair', 'we', 'had', 'everything', 'before', 'us', 'we', 'had', 'nothing', 'before', 'us', 'we', 'were', 'all', 'going', 'direct', 'to', 'heaven', 'we', 'were', 'all', 'going', 'direct', 'the', 'other', 'way', 'in', 'short', 'the', 'period', 'was', 'so', 'far', 'like', 'the', 'present', 'period', 'that','some', 'of', 'its', 'noisiest', 'authorities', 'insisted', 'on', 'its', 'being', 'received', 'for', 'good', 'or', 'for', 'evil', 'in', 'the', 'superlative', 'degree', 'of', 'comparison', 'only']</span>
+<span class='pyprm'>>>></span>
+
+
+
+</pre>
+</body>
+</html>
+
