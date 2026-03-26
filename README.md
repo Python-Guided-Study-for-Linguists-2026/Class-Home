@@ -74,7 +74,7 @@
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 9 (Mar 26)</td>
             <td style="width: 51.8281%; height: 28.8444px;">Corpus Linguistics Workshop Day 1, 2</td>
-            <td style="width: 20.7733%; height: 28.8444px;"></td>
+            <td style="width: 20.7733%; height: 28.8444px;"><a href="meeting-notes.md#meeting-9-mar-26">notes</a></td>
         </tr>
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 10 (Apr 2)</td>

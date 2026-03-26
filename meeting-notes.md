@@ -274,7 +274,8 @@
 ### Review points
 - How was Workshop Day 1 and Day 2? What else did you try?
 - Go over the two JNBs, with special focus on Day 2
-    - Output cells with too many lines? `%pprint%` is your friend, it turns on and off the "1 item per line" behavior. 
+    - Output cells with too many lines? `%pprint` is your friend, it turns on and off the "1 item per line" behavior. 
+    - Na-Rae's Jupyter Notebook: [day2.ipynb](day2.ipynb)
 
 ### Next meeting
 - [Corpus Linguistics Workshop](https://github.com/naraehan/NASSLLI2018-Corpus-Linguistics/?tab=readme-ov-file) Day 3, 4
