@@ -279,9 +279,9 @@
 
 ### Next meeting
 - [Corpus Linguistics Workshop](https://github.com/naraehan/NASSLLI2018-Corpus-Linguistics/?tab=readme-ov-file) Day 3, 4
-- **Homework**: Like before, follow the contents of Day 1 and Day 2 notebooks in your own Jupyter Notebook file. You can combine the two into a single JNB. Upload your JNB in the `hw_workshop_day34` folder. 
+- **Homework**: Like before, follow the contents of Day 3 and Day 4 notebooks in your own Jupyter Notebook file. You can combine the two into a single JNB. Upload your JNB in the `hw_workshop_day34` folder. 
    - Day 3 introduces you to NLTK's `PlaintextCorpusReader` method for reading in a corpus in one go. 
-       - The encoding error in "2005-Bush.txt" can be tricky to handle. Do your best to follow the directions, but if you get stuck, come to my office hours. 
+       - "2005-Bush.txt" used to have an encoding error, which can be tricky to handle. If the error is still present in the latest corpus data, you should fix it by following the directions. If you get stuck, come to my office hours. 
        - Is `the` getting more or less frequent through the history of American English? There's a link to a solution at the bottom of Day 3. You don't have to try it yourself, but do take a peak. 
    - Day 4 introduces a couple of technical concepts: **n-grams** and **conditional frequency distribution**. Don't worry if you find them confusing: we'll review them in class. 
-   - Again, don't just copy over the commands and nod along! That doesn't help you learn. Make sure to _explore_ by altering them and trying your own thing. You'll be surprised to find that you have lots of tools at your disposal to satisfy your curiosity. 
+   - Again, don't just copy over the commands and nod along! That doesn't help you learn. Make sure to _explore_ by altering them and trying your own thing. You'll be surprised to find that you already have lots of tools at your disposal that can help satisfy your curiosity. 
