@@ -287,23 +287,26 @@
    - Again, don't just copy over the commands and nod along! That doesn't help you learn. Make sure to _explore_ by altering them and trying your own thing. You'll be surprised to find that you already have lots of tools at your disposal that can help satisfy your curiosity. 
    
    
-# Meeting 10 (April 2)
+# Meeting 10 (Apr 2)
 
 ### Review points
 - [Corpus Linguistics Workshop](https://github.com/naraehan/NASSLLI2018-Corpus-Linguistics/?tab=readme-ov-file) Day 3, 4
+- Na-Rae's JNBs: [day3.ipynb](day3.ipynb), [day4.ipynb](day4.ipynb)
 - NLTK's `PlaintextCorpusReader` method for corpus loading
    - Various units: raw text, word tokens, sentence tokens
 - **n-grams** and **conditional frequency distribution**
+   - Using conditional frequency distribution to get likelihood of w2 following w1, and vice versa
 - Basic textual statistics:
    - Text lengths
    - Average sentence lengths
    - Average word lengths
 
+
 ### Next meeting
-- We're moving on to our final project: BU vs. JA EFL Writing 
+- We're moving on to our final project: **BU vs. JA EFL Writing** 
     - Between Bulgarian and Japanese college students, which group writes English on a more advanced level? Let's explore the question with real data: 60 English essays written by Japanese and Bulgarian students, excerpted from the [ICLE2 (International Corpus of Learner English v2) corpus](https://uclouvain.be/en/research-institutes/ilc/cecl/iclev2.html).
-    - Data: [ICLE2_bu_ja.zip](ICLE2_bu_ja.zip)
-- **Homework**: Explore the corpus data and get a sense of its makeup. 
+    - Data: [ICLE2_bu_ja.zip](https://github.com/Python-Guided-Study-for-Linguists-2026/Sandbox/ICLE2_bu_ja.zip)
+- **Homework**: Explore the ICLE2 Bu-Ja corpus dataset and get a sense of its makeup. Upload your JupyterNotebook to the `hw_buja` folder.
    - Using NLTK's `PlaintextCorpusReader`, load the data as two corpora: one for the Bulgarian L1 group, the other for the Japanese L1 group. Adapt from this code:
    ``` 
     # Set your corpus root: 
@@ -311,11 +314,9 @@
     
     # Read in the two corpora:
     bucor = PlaintextCorpusReader(corpus_root, 'BG.*txt')
-    jacor = PlaintextCorpusReader(corpus_root, 'JP.*txt')
-    ```
-   - Now, explore the two corpora to get a sense of them. I am intentionally being vague here, not listing the metrics you will need to find -- you should understand what they are! 
-   - That's it. You may be motivated to dive even deeper and produce more advanced metrics (such as average sentence lengths, average word lengths, bigrams comparison, etc.) don't do them all here, leave most for later. The urge to jump right in is not only unnecessary but may even be ill-advised at this stage. What's important: _taking your time to get to know the underlying realities of your text data_ by getting up-close with them. 
-   - Upload your JupyterNotebook to the `hw_buja` folder.
+    jacor = PlaintextCorpusReader(corpus_root, 'JP.*txt') ```
+   - Now, explore the two corpora to get a sense of them. I am intentionally being vague here, not listing the metrics you need to find. You should understand what they are! 
+   - That's it. You may be motivated to dive even deeper and produce more advanced metrics (such as average sentence lengths, average word lengths, bigrams comparison, etc.), but don't do them all here, leave most for later. The urge to jump right in to compute "all the statistics" is not only unnecessary but may even be ill-advised at this stage. What's important: _taking your time to get to know the underlying realities of your text data_ by getting up-close with them. 
  
   
  
