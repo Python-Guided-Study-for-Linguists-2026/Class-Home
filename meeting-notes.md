@@ -305,9 +305,11 @@
     - Data: [ICLE2_bu_ja.zip](ICLE2_bu_ja.zip)
 - **Homework**: Explore the corpus data and get a sense of its makeup. 
    - Using NLTK's `PlaintextCorpusReader`, load the data as two corpora: one for the Bulgarian L1 group, the other for the Japanese L1 group. Adapt from this code:
-   ```# Set your corpus root. 
+   ``` 
+    # Set your corpus root: 
     corpus_root = "./ICLE2_bu_ja"
-    # Read in the two corpora.
+    
+    # Read in the two corpora:
     bucor = PlaintextCorpusReader(corpus_root, 'BG.*txt')
     jacor = PlaintextCorpusReader(corpus_root, 'JP.*txt')
     ```
