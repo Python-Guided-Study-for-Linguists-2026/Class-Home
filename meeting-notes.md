@@ -282,7 +282,7 @@
 - **Homework**: Like before, follow the contents of Day 3 and Day 4 notebooks in your own Jupyter Notebook file. You can combine the two into a single JNB. Upload your JNB in the `hw_workshop_day34` folder. 
    - Day 3 introduces you to NLTK's `PlaintextCorpusReader` method for reading in a corpus in one go. 
        - "2005-Bush.txt" used to have an encoding error, which can be tricky to handle. If the error is still present in the latest corpus data, you should fix it by following the directions. If you get stuck, come to my office hours. 
-       - Is `the` getting more or less frequent through the history of American English? There's a link to a solution at the bottom of Day 3. You don't have to try it yourself, but do take a peak. 
+       - Is `the` getting more or less frequent through the history of American English? There's a link to a solution at the bottom of Day 3. You don't have to try it yourself, but do take a peek. 
    - Day 4 introduces a couple of technical concepts: **n-grams** and **conditional frequency distribution**. Don't worry if you find them confusing: we'll review them in class. 
    - Again, don't just copy over the commands and nod along! That doesn't help you learn. Make sure to _explore_ by altering them and trying your own thing. You'll be surprised to find that you already have lots of tools at your disposal that can help satisfy your curiosity. 
    
@@ -314,7 +314,8 @@
     
     # Read in the two corpora:
     bucor = PlaintextCorpusReader(corpus_root, 'BG.*txt')
-    jacor = PlaintextCorpusReader(corpus_root, 'JP.*txt') ```
+    jacor = PlaintextCorpusReader(corpus_root, 'JP.*txt') 
+    ```
    - Now, explore the two corpora to get a sense of them. I am intentionally being vague here, not listing the metrics you need to find. You should understand what they are! 
    - That's it. You may be motivated to dive even deeper and produce more advanced metrics (such as average sentence lengths, average word lengths, bigrams comparison, etc.), but don't do them all here, leave most for later. The urge to jump right in to compute "all the statistics" is not only unnecessary but may even be ill-advised at this stage. What's important: _taking your time to get to know the underlying realities of your text data_ by getting up-close with them. 
  
