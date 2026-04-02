@@ -315,4 +315,7 @@
     ```
    - Now, explore the two corpora to get a sense of them. I am intentionally being vague here, not listing the metrics you will need to find -- you should understand what they are! 
    - That's it. You may be motivated to dive even deeper and produce more advanced metrics (such as average sentence lengths, average word lengths, bigrams comparison, etc.) don't do them all here, leave most for later. The urge to jump right in is not only unnecessary but may even be ill-advised at this stage. What's important: _taking your time to get to know the underlying realities of your text data_ by getting up-close with them. 
+   - Upload your JupyterNotebook to the `hw_buja` folder.
+ 
+  
  
