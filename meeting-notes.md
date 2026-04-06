@@ -305,7 +305,7 @@
 ### Next meeting
 - We're moving on to our final project: **BU vs. JA EFL Writing** 
     - Between Bulgarian and Japanese college students, which group writes English on a more advanced level? Let's explore the question with real data: 60 English essays written by Japanese and Bulgarian students, excerpted from the [ICLE2 (International Corpus of Learner English v2) corpus](https://uclouvain.be/en/research-institutes/ilc/cecl/iclev2.html).
-    - Data: [ICLE2_bu_ja.zip](https://github.com/Python-Guided-Study-for-Linguists-2026/Sandbox/ICLE2_bu_ja.zip)
+    - Data: [ICLE2_bu_ja.zip](https://github.com/Python-Guided-Study-for-Linguists-2026/Sandbox/blob/main/ICLE2_bu_ja.zip)
 - **Homework**: Explore the ICLE2 Bu-Ja corpus dataset and get a sense of its makeup. Upload your JupyterNotebook to the `hw_buja` folder.
    - Using NLTK's `PlaintextCorpusReader`, load the data as two corpora: one for the Bulgarian L1 group, the other for the Japanese L1 group. Adapt from this code:
    ``` 
