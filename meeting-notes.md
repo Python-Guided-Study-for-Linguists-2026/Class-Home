@@ -320,4 +320,27 @@
    - That's it. You may be motivated to dive even deeper and produce more advanced metrics (such as average sentence lengths, average word lengths, bigrams comparison, etc.), but don't do them all here, leave most for later. The urge to jump right in to compute "all the statistics" is not only unnecessary but may even be ill-advised at this stage. What's important: _taking your time to get to know the underlying realities of your text data_ by getting up-close with them. 
  
   
- 
+# Meeting 11 (Apr 9)
+
+### Review points 
+- **BU vs. JA EFL Writing**. How did your exploration go? What did you discover about this dataset? 
+- How to go SLOW? How to get a full sense of the underlying language data while processing it?
+- What SLA theories and measurements would you like to apply? 
+
+### Next meeting
+- **Homework**: Further refine your Jupyter Notebook. Pay special attention to:
+    - Proper corpus exploration. Add a section at the beginning that accomplishes this. 
+    - Proper spot-checking steps accompanying every processing task. 
+    - Your JNB should now cover all measurements found in Na-Rae's demo JNB from today. 
+    - In addition to code cells, add documentation/narration as Markdown cells. This means, you are now adding actual written analysis and interpretation component. 
+    - What is everyone else up to? Take a peek into your classmate's work. When you find something new, incorporate it into your own JNB and give a shout-out. 
+    - A NEW task: let's explore the "General Service List (GSL)", has been used as the basic English vocabulary list for learners. An updated version called the "New General Service List" (NGSL 1.2) can be found here: https://www.newgeneralservicelist.com/new-general-service-list. See if you can find a way to utilize this resource in your evaluation of the Bulgarian and Japanese students' English writing. 
+    - No need to make a separate JNB, unless you want to. Upload it to the same `hw_buja` folder. 
+
+
+
+<!---
+- In EFL literature, the "General Service List" (GSL) has been used as the basic English vocabulary list for learners. An updated version called the "New General Service List" (NGSL 1.2) can be found here: https://www.newgeneralservicelist.com/new-general-service-list
+- **Homework**: find a way to utilize this resource in your evaluation of the Bulgarian and Japanese students' English writing. 
+- More tools: TAALES https://www.linguisticanalysistools.org/taales.html and TAASSC https://www.linguisticanalysistools.org/taassc.html
+-->

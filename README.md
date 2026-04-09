@@ -84,7 +84,7 @@
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 11 (Apr 9)</td>
             <td style="width: 51.8281%; height: 28.8444px;">Final Project: BU vs. JA EFL Writing (1)</td>
-            <td style="width: 20.7733%; height: 28.8444px;"></td>
+            <td style="width: 20.7733%; height: 28.8444px;"><a href="meeting-notes.md#meeting-11-apr-9">notes</a></td>
         </tr>
         <tr style="height: 28.8444px;">
             <td style="width: 27.3664%; height: 28.8444px;">Meeting 12 (Apr 16)</td>
