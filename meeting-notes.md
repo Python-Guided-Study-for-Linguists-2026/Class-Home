@@ -324,17 +324,19 @@
 
 ### Review points 
 - **BU vs. JA EFL Writing**. How did your exploration go? What did you discover about this dataset? 
-- How to go SLOW? How to get a full sense of the underlying language data while processing it?
+- How to go SLOW? How to get a full sense of the underlying language data while processing it? Some ideas on Na-Rae's Jupyter Notebook session: [ICLE2_bu_ja.ipynb](ICLE2_bu_ja.ipynb)
 - What SLA theories and measurements would you like to apply? 
 
 ### Next meeting
-- **Homework**: Further refine your Jupyter Notebook. Pay special attention to:
-    - Proper corpus exploration. Add a section at the beginning that accomplishes this. 
-    - Proper spot-checking steps accompanying every processing task. 
-    - Your JNB should now cover all measurements found in Na-Rae's demo JNB from today. 
-    - In addition to code cells, add documentation/narration as Markdown cells. This means, you are now adding actual written analysis and interpretation component. 
-    - What is everyone else up to? Take a peek into your classmate's work. When you find something new, incorporate it into your own JNB and give a shout-out. 
-    - A NEW task: let's explore the "General Service List (GSL)", has been used as the basic English vocabulary list for learners. An updated version called the "New General Service List" (NGSL 1.2) can be found here: https://www.newgeneralservicelist.com/new-general-service-list. See if you can find a way to utilize this resource in your evaluation of the Bulgarian and Japanese students' English writing. 
+- **Homework**: Further refine your Jupyter Notebook. 
+    - Pay special attention to:
+        - Proper corpus exploration. Add a section at the beginning that accomplishes this. 
+        - Proper spot-checking steps accompanying every processing task. 
+        - Your JNB should now cover all measurements found in Na-Rae's demo JNB from today. 
+        - In addition to code cells, add documentation/narration as Markdown cells. This means, you are now adding actual written analysis and interpretation component. 
+    - Some additional/new directions: 
+        - What is everyone else up to? Take a peek into your classmate's work. When you find something new, incorporate it into your own JNB and give a shout-out. 
+        - Let's explore the "General Service List (GSL)", has been used as the basic English vocabulary list for learners. An updated version called the "New General Service List" (NGSL 1.2) can be found here: https://www.newgeneralservicelist.com/new-general-service-list. See if you can find a way to utilize this resource in your evaluation of the Bulgarian and Japanese students' English writing. 
     - No need to make a separate JNB, unless you want to. Upload it to the same `hw_buja` folder. 
 
 
