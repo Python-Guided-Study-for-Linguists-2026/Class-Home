@@ -344,15 +344,15 @@
 
 ### Review points 
 - **BU vs. JA EFL Writing**. What have you been up to? Let's do show-and-tell. 
-- Bringing in external resources: NLTK's stopwords, NGSL, Google/Norvig n-grams
+- Bringing in external resources: NLTK's stopwords and NGSL. Details in Na-Rae's Jupyter Notebook session: [ICLE2_bu_ja.ipynb](ICLE2_bu_ja.ipynb)
 
 ### Next meeting
 - **Homework**: Further refine your Jupyter Notebook on the BU vs. JA EFL Writing project. 
     - Pay special attention to:
          - Further incorporate "new resources" we covered in class today. 
     - Some additional/new directions: 
-         - Remember the "Inaugural Speech Corpus"? Try and see if you can use it as the "reference" English data. See if you can make some meaningful three-way comparison with the BU and JA groups. 
-             - It's probably better to discard old speeches. Limit the speeches to 1900's and later. 
+         - Remember the "Inaugural Speech Corpus"? Try and see if you can use it as the "reference" English data. See if you can make some meaningful three-way comparisons with the BU and JA groups. 
+             - It's probably better to discard older speeches. Limit the comparison group to 1900's and later. 
              - Try and compare: average sentence length, TTR, average word length, stop word frequency, etc. When working on TTR, use the "truncation" method to mitigate its text length dependency. 
     - Again, no need to make a separate JNB, unless you want to. Upload it to the same `hw_buja` folder. 
 
