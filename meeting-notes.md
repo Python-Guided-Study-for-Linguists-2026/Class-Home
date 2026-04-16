@@ -328,17 +328,33 @@
 - What SLA theories and measurements would you like to apply? 
 
 ### Next meeting
-- **Homework**: Further refine your Jupyter Notebook. 
+- **Homework**: Further refine your Jupyter Notebook on the BU vs. JA EFL Writing project. 
     - Pay special attention to:
         - Proper corpus exploration. Add a section at the beginning that accomplishes this. 
         - Proper spot-checking steps accompanying every processing task. 
         - Your JNB should now cover all measurements found in Na-Rae's demo JNB from today. 
-        - In addition to code cells, add documentation/narration as Markdown cells. This means, you are now adding actual written analysis and interpretation component. 
+        - In addition to code cells, add documentation/narration as Markdown cells. This means, you are now adding actual written analysis and interpretation components. 
     - Some additional/new directions: 
         - What is everyone else up to? Take a peek into your classmate's work. When you find something new, incorporate it into your own JNB and give a shout-out. 
         - Let's explore the "General Service List (GSL)", has been used as the basic English vocabulary list for learners. An updated version called the "New General Service List" (NGSL 1.2) can be found here: https://www.newgeneralservicelist.com/new-general-service-list. See if you can find a way to utilize this resource in your evaluation of the Bulgarian and Japanese students' English writing. 
     - No need to make a separate JNB, unless you want to. Upload it to the same `hw_buja` folder. 
 
+
+# Meeting 12 (Apr 16)
+
+### Review points 
+- **BU vs. JA EFL Writing**. What have you been up to? Let's do show-and-tell. 
+- Bringing in external resources: NLTK's stopwords, NGSL, Google/Norvig n-grams
+
+### Next meeting
+- **Homework**: Further refine your Jupyter Notebook on the BU vs. JA EFL Writing project. 
+    - Pay special attention to:
+         - Further incorporate "new resources" we covered in class today. 
+    - Some additional/new directions: 
+         - Remember the "Inaugural Speech Corpus"? Try and see if you can use it as the "reference" English data. See if you can make some meaningful three-way comparison with the BU and JA groups. 
+             - It's probably better to discard old speeches. Limit the speeches to 1900's and later. 
+             - Try and compare: average sentence length, TTR, average word length, stop word frequency, etc. When working on TTR, use the "truncation" method to mitigate its text length dependency. 
+    - Again, no need to make a separate JNB, unless you want to. Upload it to the same `hw_buja` folder. 
 
 
 <!---
