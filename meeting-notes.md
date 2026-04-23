@@ -357,10 +357,11 @@
     - Again, no need to make a separate JNB, unless you want to. Upload it to the same `hw_buja` folder. 
 
 
-# Meeting 12 (Apr 16)
+# Meeting 13 (Apr 23)
 
 ### Review points 
--  **BU vs. JA EFL Writing**, one last time!  Bringing in the US Presidents' inaugural speech for comparison. We'll also do a brief tour of the `spaCy` library. 
+-  **BU vs. JA EFL Writing**, one last time!  Bringing in the US Presidents' inaugural speeches for comparison. We'll also do a brief tour of the `spaCy` library. 
+    - Details in Na-Rae's Jupyter Notebook session: [ICLE2_bu_ja.ipynb](ICLE2_bu_ja.ipynb)
 
 ### Final submission
 - **Final project submission**: Create a submission-ready version of your BU vs. JA analysis project. I recommend starting from scratch and create a new Jupyter Notebook, incorporating parts from your work so far. Make it _the definitive account_ of your corpus analysis work! 
