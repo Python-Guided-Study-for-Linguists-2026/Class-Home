@@ -357,6 +357,17 @@
     - Again, no need to make a separate JNB, unless you want to. Upload it to the same `hw_buja` folder. 
 
 
+# Meeting 12 (Apr 16)
+
+### Review points 
+-  **BU vs. JA EFL Writing**, one last time!  Bringing in the US Presidents' inaugural speech for comparison. We'll also do a brief tour of the `spaCy` library. 
+
+### Final submission
+- **Final project submission**: Create a submission-ready version of your BU vs. JA analysis project. I recommend starting from scratch and create a new Jupyter Notebook, incorporating parts from your work so far. Make it _the definitive account_ of your corpus analysis work! 
+    - Upload your JNB file to the `final_buja` folder in our Sandbox repo. 
+    - Deadline: 5/4 (Monday) noon.  
+
+
 <!---
 - In EFL literature, the "General Service List" (GSL) has been used as the basic English vocabulary list for learners. An updated version called the "New General Service List" (NGSL 1.2) can be found here: https://www.newgeneralservicelist.com/new-general-service-list
 - **Homework**: find a way to utilize this resource in your evaluation of the Bulgarian and Japanese students' English writing. 
